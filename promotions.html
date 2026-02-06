@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="csrf-token" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="" />
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+  <script src="assets/js/jquery-1.11.1.min.js"></script>
+  <meta name="description" content="" />
+  <meta name="keywords"
+    content="sports service, gaming service, live sports updates, online gaming, eSports, fantasy sports, gaming community" />
+  <title>Blog & Promotion</title>
+  <script type="text/javascript">
+    var siteUrl = '';
+    var maxSelected = '5';
+    var viewDir = 'basic';
+  </script>
+  <link rel="stylesheet" href="views/basic/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between">
+        <div class="me-3">
+          <a class="my-btn" href="index.html">
+            <span class="t1">Crazy</span><span class="t2">7x</span> </a>
+        </div>
+
+        <div class="">
+          <div class="d-flex">
+            <div class="me-2 mt-2">
+              <a class="submit" data-bs-toggle="modal" data-bs-target="#loginModal" onclick="loginForm('uid');">Log
+                In</a>
+            </div>
+            <div class="mt-2">
+              <a class="submit-2" data-bs-toggle="modal" data-bs-target="#registerModal"
+                onclick="registerForm('oneclick');">Registration</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="top-speach"></div>
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 p-0">
+        <div class="leftMenu menu" id="leftMenu">
+          <div class="scroll-y fh-100">
+            <ul>
+              <li class="border-bottom text-center p-3 d-mobile w-100">Crazy7x</li>
+              <li>
+                <a href="index.html">
+                  <i class="fa-regular fa-home me-1"></i> Crazy7x </a>
+              </li>
+              <li><a href="index.html?redirect=games?page=sports">
+                  <i class="fa-regular fa-baseball"></i> <span class="ms-2">Sports</span>
+                </a>
+              </li>
+              <li><a href="index.html?redirect=games?page=casino">
+                  <i class="fa-regular fa-spade"></i> <span class="ms-2">Live Casino</span>
+                </a>
+              </li>
+              <li><a href="index.html?redirect=games?page=slot">
+                  <i class="fa-regular fa-slot-machine"></i> <span class="ms-2">Slot</span>
+                </a>
+              </li>
+              <li><a href="index.html?redirect=games?page=crash">
+                  <i class="fa-regular fa-rocket-launch"></i> <span class="ms-2">Crash</span>
+                </a>
+              </li>
+              <li>
+                <a href="promotions.html">
+                  <i class="fa-regular fa-blog me-1"></i> Promotion </a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  <i class="fa-regular fa-headset me-1"></i> Help </a>
+              </li>
+              <li>
+                <a href="partner.html">
+                  <i class="fa-regular fa-handshake me-1"></i> Affiliate Program </a>
+              </li>
+              <li>
+                <a style="border:1px solid rgba(139, 139, 139, .1);"
+                  class="bg-gray rounded py-2 px-3 d-block mb-1 w-100 text-start" href="apps.html"><i
+                    class="fa-regular fa-mobile-screen-button me-2"></i> Download App</a>
+              </li>
+              <li><a href="https://t.me/000000"><i class="fa-brands fa-telegram me-1"></i> Telegram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-10 px-lg-1 px-0">
+        <div class="p-2">
+          <div class="scroll-w scroll-bar-0 mb-2">
+            <div class="d-flex blogs"><a class="blog-btn rounded active" id="0">All</a><a class="blog-btn rounded"
+                id="2">100% First Deposit Bonus</a><a class="blog-btn rounded" id="1">Turn Over</a></div>
+          </div>
+          <div id="blogData"></div>
+        </div>
+
+        <script type="text/javascript">
+          getBlogs(0);
+          function getBlogs(id) {
+            $.ajax({
+              url: siteUrl + "/data/promotion",
+              method: "GET",
+              dataType: 'json',
+              data: { id: id },
+              success: function (result) {
+                if (result.status == 200) {
+                  $("#blogData").html(blogHTML(result.data));
+                } else {
+                  $("#blogData").html(result.data);
+                }
+              }
+            });
+          }
+
+          function blogHTML(json) {
+            var contents = '<div class="row">';
+            for (x in json) {
+              var item = json[x];
+              contents += '<div class="col-lg-3 mb-3"><div class="bg-layout rounded shadow-sm pb-2">';
+              contents += '<a href="' + item.slug + '"><img src="' + item.image + '" class="blog-img rounded-top" />';
+              contents += '<div class="px-2 my-2">' + item.name + '</div></a></div></div>';
+            }
+            contents += '</div>';
+            return contents;
+          }
+
+          $(document).on('click', '.blogs .blog-btn', function (event) {
+            event.preventDefault();
+            var id = $(this).attr('id');
+            getBlogs(id);
+            $('.blogs .blog-btn').removeClass('active');
+            $(this).addClass('active');
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+
+
+  <!---------BET365SOFT.COM---------->
+
+
+  <!---------MOBILE MENU---------->
+  <div class="position-fixed w-100 bg-secondary m-menu">
+    <div class="d-flex d-flex justify-content-around">
+      <div>
+        <a class="btn d-block w-100" id="sideMenu">
+          <i class="fa-regular fa-bars"></i><br>Menu </a>
+      </div>
+      <div>
+        <a class="btn d-block w-100" href="partner.html">
+          <i class="fa-regular fa-handshake"></i><br>My Referral</a>
+      </div>
+      <div>
+        <a class="btn d-block w-100" href="index.html">
+          <i class="fa fa-regular fa-home"></i><br>Home </a>
+      </div>
+      <div class="dropup">
+        <a class="btn d-block w-100 fs-12 dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="fa-regular fa-spade fs-18"></i><br>Casino </a>
+        <ul class="dropdown-menu text-center" style="width:90px; min-width:90px;">
+          <li>
+            <a class="btn btn-sm" href="index.html?redirect=games?page=casino">
+              <i class="fa-regular fa-cards"></i><br>Live Casino </a>
+          </li>
+          <li>
+            <a class="btn btn-sm" href="index.html?redirect=games?page=slot">
+              <i class="fa-regular fa-slot-machine"></i><br>Slot Games </a>
+          </li>
+          <li>
+            <a class="btn btn-sm" href="index.html?redirect=games?page=crash">
+              <i class="fa-regular fa-rocket-launch"></i><br>Crash Games </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a class="btn d-block w-100" data-bs-toggle="modal" data-bs-target="#loginModal" onclick="loginForm('uid');">
+          <i class="fa-regular fa-user-circle"></i><br>Account </a>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://t.me/Habjabajs"
+    style="position:fixed; bottom:62px; right:15px; height:50px; width:50px; text-align:center; background:#27A5E7;color:#FFFFFF; border-radius:50%; cursor: pointer; z-index:9;">
+    <i class="fa-brands fa-telegram" style="font-size:28px; line-height:52px;"></i>
+  </a>
+  <!--------Footer----------->
+
+  <footer class="mt-3 px-2">
+    <center>
+      <div class="bg-footer p-3 mb-2">
+        <div class="row">
+          <div class="mb-4 col-md-12 col-12"><br>
+            <p class="text-center fs-12 px-lg-5 px-2">Please only gamble with funds you can afford to lose. No guarantee
+              of results or financial gain is given. This App only accepts customers over the age of 18.</p>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <div class="bg-footer p-3 mb-2">
+      <h6 class="mb-3">Payment Methods</h6>
+      <ul class="list-unstyled list-inline">
+        <li class="list-inline-item">
+          <img src="uploads/payments/0" height="45" class="rounded mb-2" />
+        </li>
+        <li class="list-inline-item">
+          <img src="uploads/payments/21832337.png" height="45" class="rounded mb-2" />
+        </li>
+        <li class="list-inline-item">
+          <img src="uploads/payments/83001445.png" height="45" class="rounded mb-2" />
+        </li>
+        <li class="list-inline-item">
+          <img src="uploads/payments/61969203.png" height="45" class="rounded mb-2" />
+        </li>
+        <li class="list-inline-item">
+          <img src="uploads/payments/65757988.png" height="45" class="rounded mb-2" />
+        </li>
+        <li class="list-inline-item">
+          <img src="uploads/payments/48238852.jpg" height="45" class="rounded mb-2" />
+        </li>
+      </ul>
+    </div>
+    <div class="bg-footer py-2 px-3 mb-2">
+      <div class="row">
+        <div class="col-md-10 my-2">
+          <a href="about.html">About Us</a> |
+          <a href="responsible-gambling.html">Responsible Gambling</a>
+        </div>
+        <div class="col-md-2 my-2">
+          <div class="text-center fs-20 border rounded lg-text-end text-center"
+            style="width:60px; font-size:20px; font-weight:600;">
+            18+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="bottom-speach"></div>
+
+
+
+  <div class="modal fade" id="resetModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+        <div class="modal-body">
+          <h1 class="text-center fs-20 mb-2">Reset Password</h1><br>
+          <div class="row resetForm mb-3">
+            <div class="col-6 p-0"><a class="active" data-reset="mail"><i class="fa-regular fa-envelope me-1"></i> By
+                Email</a></div>
+            <div class="col-6 p-0"><a data-reset="phone"><i class="fa-regular fa-mobile-screen-button me-1"></i> By
+                Phone</a></div>
+          </div>
+          <div id="reset-success" class="text-success"></div>
+          <div id="reset-error600" class="text-danger"></div>
+          <form method="POST" id="reset">
+            <div id="reset-form"></div>
+            <input type="submit" class="submit w-100" id="btn-es" value="Reset Password">
+          </form>
+          <div class="form-desc">
+            <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+                onclick="loginForm('uid');">Log In</a></p>
+
+            <p>Do not have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal"
+                onclick="registerForm('oneclick');">Registration</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+        <div class="modal-body">
+          <h1 class="text-center fs-20 mb-2">Log In</h1><br>
+          <div class="row loginForm mb-3">
+            <div class="col-4 p-0"><a class="active" data-login="uid"><i class="fa-regular fa-circle-check me-1"></i> By
+                Id</a></div>
+            <div class="col-4 p-0"><a data-login="mail"><i class="fa-regular fa-envelope me-1"></i> By Email</a></div>
+            <div class="col-4 p-0"><a data-login="phone"><i class="fa-regular fa-mobile-screen-button me-1"></i> By
+                Phone</a></div>
+          </div>
+          <div id="log-error600" class="text-danger"></div>
+          <form method="POST" id="login">
+            <div id="login-form"></div>
+            <input type="submit" class="submit w-100" value="Log In">
+          </form>
+          <div class="form-desc">
+            <p>Do not have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal"
+                onclick="registerForm('oneclick');"> Registration</a></p>
+
+            <p><a href="#" data-bs-toggle="modal" data-bs-target="#resetModal" onclick="resetForm('mail');">Reset
+                Password</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="reg-success"></div>
+  <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+        <div class="modal-body">
+          <h1 class="text-center fs-20 mb-2">Create a new account</h1><br>
+          <div class="row registerForm mb-3">
+            <div class="col-4 p-0"><a class="active" data-register="oneclick"><i
+                  class="fa-regular fa-hand-pointer me-1"></i> 1-Click</a></div>
+            <div class="col-4 p-0"><a data-register="phone"><i class="fa-regular fa-mobile-screen-button me-1"></i> By
+                Phone</a></div>
+            <div class="col-4 p-0"><a data-register="mail"><i class="fa-regular fa-envelope me-1"></i> By Email</a>
+            </div>
+          </div>
+          <div id="reg-error600" class="text-danger"></div>
+          <form method="POST" id="register">
+            <div id="register-form"></div>
+            <input type="submit" class="submit w-100" value="Registration" />
+          </form><br>
+          <div class="form-desc">
+            <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+                onclick="loginForm('uid');">Log In</a></p>
+
+            <p>By clicking this button you confirm that you have read and agree to the <a target="_blank"
+                href="tos.html">Terms and Conditions</a> and <a target="_blank" href="privacy.html">Privacy Policy</a>
+              of the company and confirm that you are of legal age</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="langModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+        <div class="modal-body">
+          <h1 class="text-center fs-20 mb-2 pb-3 border-bottom">Change Language</h1><br>
+          <div class="row">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="views/basic/js/account.js"></script>
+  <script src="views/basic/js/custom.js"></script>
+  <script src="views/basic/js/server.js"></script>
+</body>
+
+</html>

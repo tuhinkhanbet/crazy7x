@@ -1,0 +1,893 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "type": 2,
+            "name": "Crazy Time",
+            "image": "uploads/games/crazy_time_game.png",
+            "url": "https://crazy7x.com/lobby?id=30&id=1&type=crazytime&tid=CrazyTime0000001&name=Crazy Time"
+        },
+        {
+            "type": 2,
+            "name": "Teen Patti",
+            "image": "uploads/games/teenpatti.png",
+            "url": "https://crazy7x.com/lobby?id=30&id=1&type=teenpatti&tid=teenpattitable01&name=Teen Patti"
+        },
+        {
+            "type": 2,
+            "name": "Super Sic Bo",
+            "image": "uploads/games/ssicbo.png",
+            "url": "https://crazy7x.com/lobby?id=30&id=1&type=SicBo&tid=SuperSicBo000001&name=Super Sic Bo"
+        },
+        {
+            "type": 2,
+            "name": "Mega Wheel",
+            "image": "uploads/games/mwh.png",
+            "url": "https://crazy7x.com/lobby?id=32&id=28&tid=801&type=220&name=Mega Wheel"
+        },
+        {
+            "type": 2,
+            "name": "Wild Bounty Showdown",
+            "image": "uploads/games/98.png",
+            "url": "https://crazy7x.com/lobby?id=67&id=223&type=98&name=Wild Bounty Showdown"
+        },
+        {
+            "type": 2,
+            "name": "High Flyer",
+            "image": "uploads/games/758.png",
+            "url": "https://crazy7x.com/lobby?id=69&id=226&type=758&name=High Flyer"
+        },
+        {
+            "type": 2,
+            "name": "Aviator",
+            "image": "uploads/games/aviator.webp",
+            "url": "https://crazy7x.com/lobby?id=86&id=300&type=1&name=Aviator"
+        },
+        {
+            "type": 2,
+            "name": "Plinko",
+            "image": "uploads/games/Plinko_plinko_en.webp",
+            "url": "https://crazy7x.com/lobby?id=86&id=300&type=3&name=Plinko"
+        },
+        {
+            "type": 2,
+            "name": "Chin Shi Huang",
+            "image": "uploads/games/2.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=2&name=Chin Shi Huang"
+        },
+        {
+            "type": 2,
+            "name": "God Of Martial",
+            "image": "uploads/games/3.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=3&name=God Of Martial"
+        },
+        {
+            "type": 2,
+            "name": "Hot Chilli",
+            "image": "uploads/games/4.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=4&name=Hot Chilli"
+        },
+        {
+            "type": 2,
+            "name": "Fortune Tree",
+            "image": "uploads/games/5.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=5&name=Fortune Tree"
+        },
+        {
+            "type": 2,
+            "name": "War Of Dragons",
+            "image": "uploads/games/6.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=6&name=War Of Dragons"
+        },
+        {
+            "type": 2,
+            "name": "Lucky Ball",
+            "image": "uploads/games/8.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=8&name=Lucky Ball"
+        },
+        {
+            "type": 2,
+            "name": "Hyper Burst",
+            "image": "uploads/games/9.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=9&name=Hyper Burst"
+        },
+        {
+            "type": 2,
+            "name": "Jungle King",
+            "image": "uploads/games/10.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=10&name=Jungle King"
+        },
+        {
+            "type": 2,
+            "name": "Shanghai Beauty",
+            "image": "uploads/games/11.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=11&name=Shanghai Beauty"
+        },
+        {
+            "type": 2,
+            "name": "Fa Fa Fa",
+            "image": "uploads/games/14.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=14&name=Fa Fa Fa"
+        },
+        {
+            "type": 2,
+            "name": "Candy Baby",
+            "image": "uploads/games/15.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=15&name=Candy Baby"
+        },
+        {
+            "type": 2,
+            "name": "Hawaii Beauty",
+            "image": "uploads/games/16.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=16&name=Hawaii Beauty"
+        },
+        {
+            "type": 2,
+            "name": "SevenSevenSeven",
+            "image": "uploads/games/17.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=17&name=SevenSevenSeven"
+        },
+        {
+            "type": 2,
+            "name": "Bubble Beauty",
+            "image": "uploads/games/18.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=18&name=Bubble Beauty"
+        },
+        {
+            "type": 2,
+            "name": "FortunePig",
+            "image": "uploads/games/20.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=20&name=FortunePig"
+        },
+        {
+            "type": 2,
+            "name": "Crazy777",
+            "image": "uploads/games/21.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=21&name=Crazy777"
+        },
+        {
+            "type": 2,
+            "name": "Bao boon chin",
+            "image": "uploads/games/22.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=22&name=Bao boon chin"
+        },
+        {
+            "type": 2,
+            "name": "Night City",
+            "image": "uploads/games/23.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=23&name=Night City"
+        },
+        {
+            "type": 2,
+            "name": "Fengshen",
+            "image": "uploads/games/24.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=24&name=Fengshen"
+        },
+        {
+            "type": 2,
+            "name": "Crazy FaFaFa",
+            "image": "uploads/games/25.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=25&name=Crazy FaFaFa"
+        },
+        {
+            "type": 2,
+            "name": "XiYangYang",
+            "image": "uploads/games/27.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=27&name=XiYangYang"
+        },
+        {
+            "type": 2,
+            "name": "Diamond Party",
+            "image": "uploads/games/28.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=28&name=Diamond Party"
+        },
+        {
+            "type": 2,
+            "name": "Golden Bank",
+            "image": "uploads/games/29.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=29&name=Golden Bank"
+        },
+        {
+            "type": 2,
+            "name": "Charge Buffalo",
+            "image": "uploads/games/31.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=31&name=Charge Buffalo"
+        },
+        {
+            "type": 2,
+            "name": "Lucky Goldbricks",
+            "image": "uploads/games/32.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=32&name=Lucky Goldbricks"
+        },
+        {
+            "type": 2,
+            "name": "Super Ace",
+            "image": "uploads/games/33.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=33&name=Super Ace"
+        },
+        {
+            "type": 2,
+            "name": "Money Coming",
+            "image": "uploads/games/34.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=34&name=Money Coming"
+        },
+        {
+            "type": 2,
+            "name": "Golden Queen",
+            "image": "uploads/games/35.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=35&name=Golden Queen"
+        },
+        {
+            "type": 2,
+            "name": "Party Night",
+            "image": "uploads/games/47.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=47&name=Party Night"
+        },
+        {
+            "type": 2,
+            "name": "Boxing King",
+            "image": "uploads/games/48.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=48&name=Boxing King"
+        },
+        {
+            "type": 2,
+            "name": "Pharaoh Treasure",
+            "image": "uploads/games/53.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=53&name=Pharaoh Treasure"
+        },
+        {
+            "type": 2,
+            "name": "Book of Gold",
+            "image": "uploads/games/54.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=54&name=Book of Gold"
+        },
+        {
+            "type": 2,
+            "name": "Lucky Coming",
+            "image": "uploads/games/55.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=55&name=Lucky Coming"
+        },
+        {
+            "type": 2,
+            "name": "Super Rich",
+            "image": "uploads/games/58.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=58&name=Super Rich"
+        },
+        {
+            "type": 2,
+            "name": "Medusa",
+            "image": "uploads/games/59.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=59&name=Medusa"
+        },
+        {
+            "type": 2,
+            "name": "Roma X",
+            "image": "uploads/games/60.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=60&name=Roma X"
+        },
+        {
+            "type": 2,
+            "name": "Golden Empire",
+            "image": "uploads/games/61.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=61&name=Golden Empire"
+        },
+        {
+            "type": 2,
+            "name": "TWIN WINS",
+            "image": "uploads/games/62.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=62&name=TWIN WINS"
+        },
+        {
+            "type": 2,
+            "name": "MagicLamp",
+            "image": "uploads/games/63.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=63&name=MagicLamp"
+        },
+        {
+            "type": 2,
+            "name": "Fortune Gems",
+            "image": "uploads/games/64.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=64&name=Fortune Gems"
+        },
+        {
+            "type": 2,
+            "name": "Ali Baba",
+            "image": "uploads/games/65.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=65&name=Ali Baba"
+        },
+        {
+            "type": 2,
+            "name": "Poker King",
+            "image": "uploads/games/68.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=68&name=Poker King"
+        },
+        {
+            "type": 2,
+            "name": "Agent Ace",
+            "image": "uploads/games/70.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=70&name=Agent Ace"
+        },
+        {
+            "type": 2,
+            "name": "Happy Taxi",
+            "image": "uploads/games/71.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=71&name=Happy Taxi"
+        },
+        {
+            "type": 2,
+            "name": "Bone Fortune",
+            "image": "uploads/games/78.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=78&name=Bone Fortune"
+        },
+        {
+            "type": 2,
+            "name": "Thor X",
+            "image": "uploads/games/81.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=81&name=Thor X"
+        },
+        {
+            "type": 2,
+            "name": "Mega Ace",
+            "image": "uploads/games/83.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=83&name=Mega Ace"
+        },
+        {
+            "type": 2,
+            "name": "MAYAN EMPIRE",
+            "image": "uploads/games/84.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=84&name=MAYAN EMPIRE"
+        },
+        {
+            "type": 2,
+            "name": "Samba",
+            "image": "uploads/games/85.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=85&name=Samba"
+        },
+        {
+            "type": 2,
+            "name": "Gold Rush",
+            "image": "uploads/games/86.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=86&name=Gold Rush"
+        },
+        {
+            "type": 2,
+            "name": "Bonus Hunter",
+            "image": "uploads/games/88.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=88&name=Bonus Hunter"
+        },
+        {
+            "type": 2,
+            "name": "JILI Caishen",
+            "image": "uploads/games/90.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=90&name=JILI Caishen"
+        },
+        {
+            "type": 2,
+            "name": "Neko Fortune",
+            "image": "uploads/games/91.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=91&name=Neko Fortune"
+        },
+        {
+            "type": 2,
+            "name": "World Cup",
+            "image": "uploads/games/92.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=92&name=World Cup"
+        },
+        {
+            "type": 2,
+            "name": "Crazy Pusher",
+            "image": "uploads/games/99.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=99&name=Crazy Pusher"
+        },
+        {
+            "type": 2,
+            "name": "Pirate Queen",
+            "image": "uploads/games/104.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=104&name=Pirate Queen"
+        },
+        {
+            "type": 2,
+            "name": "Wild Racer",
+            "image": "uploads/games/105.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=105&name=Wild Racer"
+        },
+        {
+            "type": 2,
+            "name": "Sin City",
+            "image": "uploads/games/106.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=106&name=Sin City"
+        },
+        {
+            "type": 2,
+            "name": "ELF BINGO",
+            "image": "uploads/games/107.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=107&name=ELF BINGO"
+        },
+        {
+            "type": 2,
+            "name": "Master Tiger",
+            "image": "uploads/games/111.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=111&name=Master Tiger"
+        },
+        {
+            "type": 2,
+            "name": "Wild Ace",
+            "image": "uploads/games/115.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=115&name=Wild Ace"
+        },
+        {
+            "type": 2,
+            "name": "Golden Joker",
+            "image": "uploads/games/117.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=117&name=Golden Joker"
+        },
+        {
+            "type": 2,
+            "name": "Golden Temple",
+            "image": "uploads/games/118.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=118&name=Golden Temple"
+        },
+        {
+            "type": 2,
+            "name": "Devil Fire",
+            "image": "uploads/games/119.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=119&name=Devil Fire"
+        },
+        {
+            "type": 2,
+            "name": "Trial of Phoenix",
+            "image": "uploads/games/126.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=126&name=Trial of Phoenix"
+        },
+        {
+            "type": 2,
+            "name": "Aztec Priestess",
+            "image": "uploads/games/127.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=127&name=Aztec Priestess"
+        },
+        {
+            "type": 2,
+            "name": "King Arthur",
+            "image": "uploads/games/131.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=131&name=King Arthur"
+        },
+        {
+            "type": 2,
+            "name": "Fortune Gems 2",
+            "image": "uploads/games/137.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=137&name=Fortune Gems 2"
+        },
+        {
+            "type": 2,
+            "name": "Cricket King 18",
+            "image": "uploads/games/139.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=139&name=Cricket King 18"
+        },
+        {
+            "type": 2,
+            "name": "Witches' Night",
+            "image": "uploads/games/140.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=140&name=Witches' Night"
+        },
+        {
+            "type": 2,
+            "name": "Arena Fighter",
+            "image": "uploads/games/141.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=141&name=Arena Fighter"
+        },
+        {
+            "type": 2,
+            "name": "Cricket SAH 75",
+            "image": "uploads/games/143.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=143&name=Cricket SAH 75"
+        },
+        {
+            "type": 2,
+            "name": "Bangla Beauty",
+            "image": "uploads/games/149.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=149&name=Bangla Beauty"
+        },
+        {
+            "type": 2,
+            "name": "Dabanggg",
+            "image": "uploads/games/150.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=150&name=Dabanggg"
+        },
+        {
+            "type": 2,
+            "name": "Zeus",
+            "image": "uploads/games/153.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=153&name=Zeus"
+        },
+        {
+            "type": 2,
+            "name": "Devil Fire 2",
+            "image": "uploads/games/156.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=156&name=Devil Fire 2"
+        },
+        {
+            "type": 2,
+            "name": "Charge Buffalo ASCENT",
+            "image": "uploads/games/157.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=157&name=Charge Buffalo ASCENT"
+        },
+        {
+            "type": 2,
+            "name": "Fortune Monkey",
+            "image": "uploads/games/161.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=161&name=Fortune Monkey"
+        },
+        {
+            "type": 2,
+            "name": "Jackpot Joker",
+            "image": "uploads/games/162.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=162&name=Jackpot Joker"
+        },
+        {
+            "type": 2,
+            "name": "Fortune Gems 3",
+            "image": "uploads/games/163.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=163&name=Fortune Gems 3"
+        },
+        {
+            "type": 2,
+            "name": "3 Coin Treasures",
+            "image": "uploads/games/164.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=164&name=3 Coin Treasures"
+        },
+        {
+            "type": 2,
+            "name": "Potion Wizard",
+            "image": "uploads/games/165.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=165&name=Potion Wizard"
+        },
+        {
+            "type": 2,
+            "name": "Crazy Hunter 2",
+            "image": "uploads/games/166.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=166&name=Crazy Hunter 2"
+        },
+        {
+            "type": 2,
+            "name": "The Pig House",
+            "image": "uploads/games/167.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=167&name=The Pig House"
+        },
+        {
+            "type": 2,
+            "name": "Legacy of Egypt",
+            "image": "uploads/games/168.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=168&name=Legacy of Egypt"
+        },
+        {
+            "type": 2,
+            "name": "Super Ace Deluxe",
+            "image": "uploads/games/169.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=169&name=Super Ace Deluxe"
+        },
+        {
+            "type": 2,
+            "name": "Money Coming Expand Bets",
+            "image": "uploads/games/170.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=170&name=Money Coming Expand Bets"
+        },
+        {
+            "type": 2,
+            "name": "Fish Prawn Crab",
+            "image": "uploads/games/171.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=171&name=Fish Prawn Crab"
+        },
+        {
+            "type": 2,
+            "name": "Super Ace Scratch",
+            "image": "uploads/games/172.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=172&name=Super Ace Scratch"
+        },
+        {
+            "type": 2,
+            "name": "Jhandi Munda",
+            "image": "uploads/games/173.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=173&name=Jhandi Munda"
+        },
+        {
+            "type": 2,
+            "name": "Thai Hilo",
+            "image": "uploads/games/176.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=176&name=Thai Hilo"
+        },
+        {
+            "type": 2,
+            "name": "3 Lucky Piggy",
+            "image": "uploads/games/177.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=177&name=3 Lucky Piggy"
+        },
+        {
+            "type": 2,
+            "name": "3 Pot Dragons",
+            "image": "uploads/games/178.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=178&name=3 Pot Dragons"
+        },
+        {
+            "type": 2,
+            "name": "Party Star",
+            "image": "uploads/games/181.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=181&name=Party Star"
+        },
+        {
+            "type": 2,
+            "name": "Egypt's Glow",
+            "image": "uploads/games/182.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=182&name=Egypt's Glow"
+        },
+        {
+            "type": 2,
+            "name": "Poseidon",
+            "image": "uploads/games/184.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=184&name=Poseidon"
+        },
+        {
+            "type": 2,
+            "name": "Money Pot",
+            "image": "uploads/games/187.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=187&name=Money Pot"
+        },
+        {
+            "type": 2,
+            "name": "Nightfall Hunting",
+            "image": "uploads/games/188.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=188&name=Nightfall Hunting"
+        },
+        {
+            "type": 2,
+            "name": "Sh\u014dgun",
+            "image": "uploads/games/189.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=189&name=Sh\u014dgun"
+        },
+        {
+            "type": 2,
+            "name": "Cricket Roulette",
+            "image": "uploads/games/190.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=190&name=Cricket Roulette"
+        },
+        {
+            "type": 2,
+            "name": "Lucky Jaguar",
+            "image": "uploads/games/191.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=191&name=Lucky Jaguar"
+        },
+        {
+            "type": 2,
+            "name": "Lucky Doggy",
+            "image": "uploads/games/192.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=192&name=Lucky Doggy"
+        },
+        {
+            "type": 2,
+            "name": "Fortune Roulette",
+            "image": "uploads/games/193.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=193&name=Fortune Roulette"
+        },
+        {
+            "type": 2,
+            "name": "Golden Bank 2",
+            "image": "uploads/games/194.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=194&name=Golden Bank 2"
+        },
+        {
+            "type": 2,
+            "name": "Go For Champion",
+            "image": "uploads/games/195.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=195&name=Go For Champion"
+        },
+        {
+            "type": 2,
+            "name": "Fruity Wheel",
+            "image": "uploads/games/196.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=196&name=Fruity Wheel"
+        },
+        {
+            "type": 2,
+            "name": "Fortune Gems Scratch",
+            "image": "uploads/games/197.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=197&name=Fortune Gems Scratch"
+        },
+        {
+            "type": 2,
+            "name": "Safari Mystery",
+            "image": "uploads/games/198.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=198&name=Safari Mystery"
+        },
+        {
+            "type": 2,
+            "name": "Treasure Quest",
+            "image": "uploads/games/199.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=199&name=Treasure Quest"
+        },
+        {
+            "type": 2,
+            "name": "Coin Tree",
+            "image": "uploads/games/200.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=200&name=Coin Tree"
+        },
+        {
+            "type": 2,
+            "name": "3 Coin Wild Horse",
+            "image": "uploads/games/201.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=201&name=3 Coin Wild Horse"
+        },
+        {
+            "type": 2,
+            "name": "Cricket War",
+            "image": "uploads/games/202.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=202&name=Cricket War"
+        },
+        {
+            "type": 2,
+            "name": "Roma X Deluxe",
+            "image": "uploads/games/203.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=203&name=Roma X Deluxe"
+        },
+        {
+            "type": 2,
+            "name": "Super Ace Joker",
+            "image": "uploads/games/206.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=206&name=Super Ace Joker"
+        },
+        {
+            "type": 2,
+            "name": "Fortune Coins",
+            "image": "uploads/games/208.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=208&name=Fortune Coins"
+        },
+        {
+            "type": 2,
+            "name": "3 Charge Buffalo",
+            "image": "uploads/games/209.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=209&name=3 Charge Buffalo"
+        },
+        {
+            "type": 2,
+            "name": "Ultimate Texas Hold'em",
+            "image": "uploads/games/210.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=210&name=Ultimate Texas Hold'em"
+        },
+        {
+            "type": 2,
+            "name": "Domino Go",
+            "image": "uploads/games/211.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=211&name=Domino Go"
+        },
+        {
+            "type": 2,
+            "name": "3 Coin Treasures 2",
+            "image": "uploads/games/213.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=213&name=3 Coin Treasures 2"
+        },
+        {
+            "type": 2,
+            "name": "Pirate Queen 2",
+            "image": "uploads/games/215.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=215&name=Pirate Queen 2"
+        },
+        {
+            "type": 2,
+            "name": "3 LUCKY LION",
+            "image": "uploads/games/216.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=216&name=3 LUCKY LION"
+        },
+        {
+            "type": 2,
+            "name": "Golden Empire 2",
+            "image": "uploads/games/220.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=220&name=Golden Empire 2"
+        },
+        {
+            "type": 2,
+            "name": "Super Ace 2",
+            "image": "uploads/games/221.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=221&name=Super Ace 2"
+        },
+        {
+            "type": 2,
+            "name": "Money Coming 2",
+            "image": "uploads/games/222.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=222&name=Money Coming 2"
+        },
+        {
+            "type": 2,
+            "name": "Circus Joker 4096",
+            "image": "uploads/games/223.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=223&name=Circus Joker 4096"
+        },
+        {
+            "type": 2,
+            "name": "Crazy777 2",
+            "image": "uploads/games/224.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=224&name=Crazy777 2"
+        },
+        {
+            "type": 2,
+            "name": "Sweet Magic",
+            "image": "uploads/games/225.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=225&name=Sweet Magic"
+        },
+        {
+            "type": 2,
+            "name": "Crystal 777 DELUXE",
+            "image": "uploads/games/226.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=226&name=Crystal 777 DELUXE"
+        },
+        {
+            "type": 2,
+            "name": "Safari King",
+            "image": "uploads/games/230.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=230&name=Safari King"
+        },
+        {
+            "type": 2,
+            "name": "ROMA X 10000",
+            "image": "uploads/games/231.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=231&name=ROMA X 10000"
+        },
+        {
+            "type": 2,
+            "name": "Cash Coin",
+            "image": "uploads/games/232.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=232&name=Cash Coin"
+        },
+        {
+            "type": 2,
+            "name": "Drop Ball",
+            "image": "uploads/games/233.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=233&name=Drop Ball"
+        },
+        {
+            "type": 2,
+            "name": "Joker Coins",
+            "image": "uploads/games/234.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=234&name=Joker Coins"
+        },
+        {
+            "type": 2,
+            "name": "Boxing King Title Match",
+            "image": "uploads/games/235.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=235&name=Boxing King Title Match"
+        },
+        {
+            "type": 2,
+            "name": "Fortune Coins 2",
+            "image": "uploads/games/236.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=236&name=Fortune Coins 2"
+        },
+        {
+            "type": 2,
+            "name": "Money Pot Deluxe",
+            "image": "uploads/games/237.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=237&name=Money Pot Deluxe"
+        },
+        {
+            "type": 2,
+            "name": "Circus Jackpot",
+            "image": "uploads/games/238.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=238&name=Circus Jackpot"
+        },
+        {
+            "type": 2,
+            "name": "10 Sparkling Crown",
+            "image": "uploads/games/239.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=239&name=10 Sparkling Crown"
+        },
+        {
+            "type": 2,
+            "name": "Clover Coins 3x3",
+            "image": "uploads/games/240.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=240&name=Clover Coins 3x3"
+        },
+        {
+            "type": 2,
+            "name": "Gallina Fortunata",
+            "image": "uploads/games/241.png",
+            "url": "https://crazy7x.com/lobby?id=94&id=263&type=241&name=Gallina Fortunata"
+        }
+    ]
+}

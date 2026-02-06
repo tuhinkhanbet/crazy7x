@@ -1,0 +1,3 @@
+<input type="hidden" name="reset" value="phone">
+<input type="number" name="phone" id="reset-border300" class="form-control numberNoArrow" placeholder="Mobile Number" required>
+<div class="text-danger" id="reset-error300"></div><br>

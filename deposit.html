@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <meta name="description" content="" />
+    <meta name="keywords"
+        content="sports service, gaming service, live sports updates, online gaming, eSports, fantasy sports, gaming community" />
+    <title>Deposit - Crazy7x</title>
+    <script type="text/javascript">
+        var siteUrl = '';
+        var maxSelected = '5';
+        var viewDir = 'basic';
+    </script>
+    <link rel="stylesheet" href="views/basic/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between">
+                <div class="me-3">
+                    <a class="my-btn" href="index.html">
+                        <span class="t1">Crazy</span><span class="t2">7x</span> </a>
+                </div>
+
+                <div class="" id="auth-section">
+                    <div class="d-flex">
+                        <div class="me-2 mt-2">
+                            <a class="submit" data-bs-toggle="modal" data-bs-target="#loginModal"
+                                onclick="loginForm('uid');">Log
+                                In</a>
+                        </div>
+                        <div class="mt-2">
+                            <a class="submit-2" data-bs-toggle="modal" data-bs-target="#registerModal"
+                                onclick="registerForm('oneclick');">Registration</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="top-speach"></div>
+
+    <!-- Right Side Menu (Account Sidebar) -->
+    <div class="rightMenu menu" id="rightMenu">
+        <div class="scroll-y fh-100">
+            <div class="box text-center p-3">
+                <div><b>user1770215821</b></div>
+                <div>#2359</div>
+                <div id="bonusBalance"></div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-user-circle me-1"></i> My Profile</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-dollar me-1"></i> Account</a>
+                </li>
+                <li>
+                    <a href="deposit.html" class="active">
+                        <i class="fa-regular fa-circle-down me-1"></i> Deposit</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-up me-1"></i> Withdraw Funds</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-money-from-bracket me-1"></i> Cash Withdraw</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-history me-1"></i> Sports History</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-spade me-1"></i> Games History</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-exchange me-1"></i> Transaction History</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-check-circle me-1"></i> Booking Events</a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="fa-regular fa-circle-info me-1"></i> Help & Support</a>
+                </li>
+                <li>
+                    <a href="#" onclick="logout()">
+                        <i class="fa-regular fa-sign-out me-1"></i> Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 p-0">
+                <div class="leftMenu menu" id="leftMenu">
+                    <div class="scroll-y fh-100">
+                        <ul>
+                            <li class="border-bottom text-center p-3 d-mobile w-100">Crazy7x</li>
+                            <li>
+                                <a href="index.html">
+                                    <i class="fa-regular fa-home me-1"></i> Crazy7x </a>
+                            </li>
+                            <li><a href="index.html?redirect=games?page=sports">
+                                    <i class="fa-regular fa-baseball"></i> <span class="ms-2">Sports</span>
+                                </a>
+                            </li>
+                            <li><a href="index.html?redirect=games?page=casino">
+                                    <i class="fa-regular fa-spade"></i> <span class="ms-2">Live Casino</span>
+                                </a>
+                            </li>
+                            <li><a href="index.html?redirect=games?page=slot">
+                                    <i class="fa-regular fa-slot-machine"></i> <span class="ms-2">Slot</span>
+                                </a>
+                            </li>
+                            <li><a href="index.html?redirect=games?page=crash">
+                                    <i class="fa-regular fa-rocket-launch"></i> <span class="ms-2">Crash</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="promotions.html">
+                                    <i class="fa-regular fa-blog me-1"></i> Promotion </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <i class="fa-regular fa-headset me-1"></i> Help </a>
+                            </li>
+                            <li>
+                                <a href="partner.html">
+                                    <i class="fa-regular fa-handshake me-1"></i> Affiliate Program </a>
+                            </li>
+                            <li>
+                                <a style="border:1px solid rgba(139, 139, 139, .1);"
+                                    class="bg-gray rounded py-2 px-3 d-block mb-1 w-100 text-start" href="apps.html"><i
+                                        class="fa-regular fa-mobile-screen-button me-2"></i> Download App</a>
+                            </li>
+                            <li><a href="https://t.me/000000"><i class="fa-brands fa-telegram me-1"></i> Telegram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 px-lg-1 px-0">
+                <div class="bg-layout p-3 mb-3">
+                    <h5 class="text-uppercase border-bottom pb-2 mb-2">Account - <span id="accountId">2359</span></h5>
+                    Select payment method to top up your account:<br><br>
+
+                    <div class="bg-gray border border-info rounded p-3 mb-3">
+                        If You do not receive the deposit amount in your gaming account within 5 Minute, please contact
+                        our general
+                        queries (Help & Support) with next details: Player id, Transaction ID, Client no, Agent number,
+                        Time, Date,
+                        Amount, Transaction Screenshot from app
+                    </div><br>
+
+                    <div class="text-uppercase bg-bet py-2 px-3 mb-3">Recommended Currency</div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                            <div class="img-box">
+                                <div class="position-absolute bg-danger text-white p-1"
+                                    style="right:0px; top:1px; z-index:9;">
+                                    <b>+10%</b>
+                                </div>
+                                <button class="my-btn border rounded p-0" onclick="menualData('4');"
+                                    data-bs-toggle="modal" data-bs-target="#menualModal">
+                                    <img src="uploads/payments/61969203.png" class="img-zoomIn rounded-top" />
+                                    <div class="bg-bet w-100 text-center p-2 rounded-bottom">Bkash Personal</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                            <div class="img-box">
+                                <div class="position-absolute bg-danger text-white p-1"
+                                    style="right:0px; top:1px; z-index:9;">
+                                    <b>+10%</b>
+                                </div>
+                                <button class="my-btn border rounded p-0" onclick="menualData('3');"
+                                    data-bs-toggle="modal" data-bs-target="#menualModal">
+                                    <img src="uploads/payments/65757988.png" class="img-zoomIn rounded-top" />
+                                    <div class="bg-bet w-100 text-center p-2 rounded-bottom">Nagad Personal</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-uppercase bg-bet py-2 px-3 mb-3">Other Currency</div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                            <div class="img-box">
+                                <div class="position-absolute bg-danger text-white p-1"
+                                    style="right:0px; top:1px; z-index:9;">
+                                    <b>+10%</b>
+                                </div>
+                                <button class="my-btn border rounded p-0" onclick="menualData('28');"
+                                    data-bs-toggle="modal" data-bs-target="#menualModal">
+                                    <img src="uploads/payments/75360028.png" class="img-zoomIn rounded-top" />
+                                    <div class="bg-bet w-100 text-center p-2 rounded-bottom">Goole Pay</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                            <div class="img-box">
+                                <div class="position-absolute bg-danger text-white p-1"
+                                    style="right:0px; top:1px; z-index:9;">
+                                    <b>+10%</b>
+                                </div>
+                                <button class="my-btn border rounded p-0" onclick="menualData('27');"
+                                    data-bs-toggle="modal" data-bs-target="#menualModal">
+                                    <img src="uploads/payments/94254785.png" class="img-zoomIn rounded-top" />
+                                    <div class="bg-bet w-100 text-center p-2 rounded-bottom">Phone Pay</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                            <div class="img-box">
+                                <div class="position-absolute bg-danger text-white p-1"
+                                    style="right:0px; top:1px; z-index:9;">
+                                    <b>+10%</b>
+                                </div>
+                                <button class="my-btn border rounded p-0" onclick="menualData('26');"
+                                    data-bs-toggle="modal" data-bs-target="#menualModal">
+                                    <img src="uploads/payments/53373884.png" class="img-zoomIn rounded-top" />
+                                    <div class="bg-bet w-100 text-center p-2 rounded-bottom">Paytm</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                            <div class="img-box">
+                                <div class="position-absolute bg-danger text-white p-1"
+                                    style="right:0px; top:1px; z-index:9;">
+                                    <b>+10%</b>
+                                </div>
+                                <button class="my-btn border rounded p-0" onclick="menualData('25');"
+                                    data-bs-toggle="modal" data-bs-target="#menualModal">
+                                    <img src="uploads/payments/46203231.png" class="img-zoomIn rounded-top" />
+                                    <div class="bg-bet w-100 text-center p-2 rounded-bottom">Touch's Go</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                            <div class="img-box">
+                                <div class="position-absolute bg-danger text-white p-1"
+                                    style="right:0px; top:1px; z-index:9;">
+                                    <b>+4%</b>
+                                </div>
+                                <button class="my-btn border rounded p-0" onclick="menualData('14');"
+                                    data-bs-toggle="modal" data-bs-target="#menualModal">
+                                    <img src="uploads/payments/21832337.png" class="img-zoomIn rounded-top" />
+                                    <div class="bg-bet w-100 text-center p-2 rounded-bottom">Binance Pay</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+
+
+                <div class="modal fade" id="agentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-md modal-dialog-centered">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">X</button>
+                            <div class="modal-body">
+                                <div id="agent-error600" class="text-danger"></div>
+                                <div id="agent-success"></div>
+                                <form method="POST" id="agentDeposit">
+                                    <div id="agentData"></div>
+                                    <input type="submit" class="submit w-100 btn-agent" value="Confirm" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="menualModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-md modal-dialog-centered">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">X</button>
+                            <div class="modal-body">
+                                <div id="menual-error600" class="text-danger"></div>
+                                <div id="menual-success"></div>
+                                <form method="POST" id="menualDeposit">
+                                    <div id="menualData"></div>
+                                    <input type="submit" class="submit w-100 btn-menual" value="Confirm" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="merchantModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-md modal-dialog-centered">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">X</button>
+                            <div class="modal-body">
+                                <div id="merchant-error600" class="text-danger"></div>
+                                <form method="POST" id="merchantDeposit">
+                                    <div id="merchantData"></div>
+                                    <input type="submit" class="submit w-100 btn-merchant" value="Payment" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="copyData"></div>
+                <script type="text/javascript">
+                    function agentData(pid) {
+                        $.ajax({
+                            url: siteUrl + "/player/data/deposit?action=agent",
+                            method: "POST",
+                            dataType: 'JSON',
+                            data: { pid: pid },
+                            success: function (result) {
+                                if (result.status == 200) {
+                                    $("#agentData").html(formHTML(result.data, 'agent'));
+                                } else {
+                                    $("#agentData").html(result.data);
+                                }
+                            }
+                        });
+                    }
+
+                    function menualData(pid) {
+                        // Since this is a static demo, show a simulated form
+                        var paymentData = {
+                            '4': { name: 'Bkash Personal', image: 'uploads/payments/61969203.png' },
+                            '3': { name: 'Nagad Personal', image: 'uploads/payments/65757988.png' },
+                            '28': { name: 'Google Pay', image: 'uploads/payments/75360028.png' },
+                            '27': { name: 'Phone Pay', image: 'uploads/payments/94254785.png' },
+                            '26': { name: 'Paytm', image: 'uploads/payments/53373884.png' },
+                            '25': { name: "Touch's Go", image: 'uploads/payments/46203231.png' },
+                            '14': { name: 'Binance Pay', image: 'uploads/payments/21832337.png' }
+                        };
+
+                        var data = paymentData[pid];
+                        if (data) {
+                            var contents = '<center><img src="' + data.image + '" class="rounded" height="65px" /></center><br>';
+                            var walletInfo = 'Send money to <b>' + data.name + '</b> wallet';
+
+                            // Map of IDs for specific methods
+                            var idMap = {
+                                '14': { label: 'Binance ID', value: '510877914' },
+                                '28': { label: 'Google Pay ID', value: '+91 95432 19876' },
+                                '27': { label: 'PhonePe ID', value: '+91 96385 27410' },
+                                '26': { label: 'Paytm ID', value: '+91 87654 32109' }
+                            };
+
+                            if (idMap[pid]) {
+                                var pData = idMap[pid];
+                                walletInfo += '<br>' + pData.label + ':<br>';
+                                walletInfo += '<input type="text" class="d-none" value="' + pData.value + '" id="copyInput" readonly>';
+                                walletInfo += '<a class="my-btn border border-info py-1 px-2 rounded mt-2 d-inline-block" onclick="copyInput();" style="cursor: pointer;">' + pData.value + ' <i class="far fa-copy ms-1"></i></a>';
+                            }
+
+                            contents += '<div class="bg-gray border rounded p-2 mb-3 text-center">' + walletInfo + '</div>';
+                            contents += '<input type="hidden" name="pid" value="' + pid + '">';
+                            contents += '<input type="hidden" name="method" value="' + data.name + '">';
+                            contents += '<div class="row">';
+                            contents += '<div class="col-md-4"><label>Amount BDT <sup class="text-danger">*</sup></label></div>';
+                            contents += '<div class="col-md-8"><input type="number" id="menual-border300" name="amount" step="any" class="form-control numberNoArrow" placeholder="Min: 100" required>';
+                            contents += '<div id="menual-error300" class="text-danger"></div><br></div>';
+
+                            // Check if this method requires specific fields (matches the IDs we have maps for)
+                            if (idMap[pid]) {
+                                contents += '<div class="col-md-4"><label>Account Number <sup class="text-danger">*</sup></label></div>';
+                                contents += '<div class="col-md-8"><input type="text" name="account_number" class="form-control" placeholder="Enter Account Number" required><br></div>';
+
+                                contents += '<div class="col-md-4"><label>Transaction ID <sup class="text-danger">*</sup></label></div>';
+                                contents += '<div class="col-md-8"><input type="text" name="transaction_id" class="form-control" placeholder="Enter Transaction ID" required><br></div>';
+                            }
+
+                            contents += '<div class="col-md-4"><label>Bonus</label></div>';
+                            contents += '<div class="col-md-8"><select name="bonus" class="form-control">';
+                            contents += '<option value="0">No bonus</option>';
+                            contents += '<option value="50">First-time deposit bonus (50%)</option>';
+                            contents += '<option value="30">Weekly Bonus (30%)</option>';
+                            contents += '<option value="100">Special bonus (100%)</option>';
+                            contents += '</select><br></div>';
+                            contents += '</div>';
+                            $("#menualData").html(contents);
+                        }
+                    }
+
+
+                    function formHTML(json, role) {
+                        var contents = '<center><img src="' + json.image + '" class="rounded" height="65px" /></center><br>';
+                        contents += '<div class="bg-gray border rounded p-2 mb-3 text-center">' + json.alert + ' <b>' + json.method + ' wallet <br>';
+                        contents += '<input type="text" class="d-none" value="' + json.account + '" id="copyInput" readonly><div class="my-2"></div>';
+                        contents += '<a class="my-btn border border-info py-1 px-2 rounded" onclick="copyInput();">' + json.account + ' <i class="far fa-copy ms-1"></i></a></b></div>';
+                        contents += '<input type="hidden" name="aid" value="' + json.aid + '">';
+                        contents += '<input type="hidden" name="pid" value="' + json.pid + '">';
+                        contents += '<input type="hidden" name="method" value="' + json.method + '">';
+                        contents += '<div class="row"><div class="col-md-4"><label>' + json.text1;
+                        contents += ' ' + json.currency + ' <sup class="text-danger">*</sup></label></div>';
+                        contents += '<div class="col-md-8"><input type="number" id="' + role + '-border300" name="amount" step="any" class="form-control numberNoArrow" placeholder="' + json.minimum + '" required>';
+                        contents += '<div id="' + role + '-error300" class="text-danger"></div><br></div>';
+                        contents += '<div class="col-md-4"><label>' + json.text2 + ' <sup class="text-danger">*</sup></label></div>';
+                        contents += '<div class="col-md-8"><input type="text" name="from_account" class="form-control" placeholder="' + json.text2 + '" required><br></div>';
+                        contents += '<div class="col-md-4"><label>' + json.text3 + ' <sup class="text-danger">*</sup></label></div>';
+                        contents += '<div class="col-md-8"><input type="password" id="' + role + '-border400" name="trxid" class="form-control" placeholder="' + json.text3 + '" autocomplete="off" required>';
+                        contents += '<div id="' + role + '-error400" class="text-danger"></div><br></div></div>';
+                        return contents;
+                    }
+
+
+                    function merchantData(pid) {
+                        $.ajax({
+                            url: siteUrl + "/player/data/deposit?action=merchant",
+                            method: "POST",
+                            dataType: 'JSON',
+                            data: { pid: pid },
+                            success: function (result) {
+                                if (result.status == 200) {
+                                    $("#merchantData").html(payHTML(result.data));
+                                } else {
+                                    $("#merchantData").html(result.data);
+                                }
+                            }
+                        });
+                    }
+
+                    function payHTML(json) {
+                        var contents = '<center><img src="' + json.image + '" class="rounded" height="65px" /></center><br>';
+                        contents += '<div class="bg-gray border rounded p-3 mb-3">' + json.alert + '</div>';
+                        contents += '<input type="hidden" name="pid" value="' + json.pid + '">';
+                        contents += '<label>' + json.text1 + ' ' + json.currency + ' <sup class="text-danger">*</sup></label>';
+                        contents += '<input type="number" id="merchant-border300" name="amount" step="any" class="form-control numberNoArrow" placeholder="' + json.minimum + '" required>';
+                        contents += '<div id="merchant-error300" class="text-danger"></div><br>';
+                        return contents;
+                    }
+
+                    $(document).ready(function (e) {
+                        // Update account ID on page load
+                        var userId = localStorage.getItem('userId') || '2359';
+                        $('#accountId').text(userId);
+
+                        $("#agentDeposit").on('submit', function (e) {
+                            e.preventDefault();
+                            $(".btn-agent").css('pointer-events', 'none');
+                            $(".btn-agent").val('Please Wait...');
+                            setTimeout(function () {
+                                document.getElementById('agentDeposit').style.display = 'none';
+                                $("#agent-success").html('<h5 class="text-success"><i class="fa-regular fa-check-circle"></i> Deposit request submitted successfully!</h5>');
+                            }, 1500);
+                        });
+
+
+                        $("#menualDeposit").on('submit', function (e) {
+                            e.preventDefault();
+                            var amount = $(this).find('input[name="amount"]').val();
+                            var method = $(this).find('input[name="method"]').val();
+
+                            var specialMethods = ['Binance Pay', 'Google Pay', 'Phone Pay', 'Paytm'];
+
+                            if (method === "Touch's Go") {
+                                // Touch 'n Go Logic
+                                $('#touchNGoModal').css('display', 'flex');
+
+                                // Update Amount and Time
+                                $('#tngAmount').text('MYR ' + amount);
+
+                                var now = new Date();
+                                var timeString = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0');
+                                $('#tngTime').text(timeString);
+
+                                setTimeout(function () {
+                                    window.location.href = 'https://play.google.com/store/apps/details?id=my.com.tngdigital.ewallet';
+                                }, 7000);
+
+                            } else if (specialMethods.includes(method)) {
+                                // Show Processing Modal for these methods
+                                $('#processingModal').css('display', 'flex');
+
+                                let timeLeft = 10;
+                                const totalTime = 10;
+
+                                const timer = setInterval(function () {
+                                    timeLeft--;
+                                    $('#countdown').text(timeLeft);
+
+                                    // Update progress bar
+                                    const percentage = (timeLeft / totalTime) * 100;
+                                    $('#progressBar').css('width', percentage + '%');
+
+                                    if (timeLeft <= 0) {
+                                        clearInterval(timer);
+                                        alert('Transaction ID not matching');
+                                        window.location.href = 'index.html';
+                                    }
+                                }, 1000);
+                            } else {
+                                $(".btn-menual").css('pointer-events', 'none');
+                                $(".btn-menual").val('Please Wait...');
+                                setTimeout(function () {
+                                    window.location.href = 'payment.html?amount=' + amount + '&method=' + method;
+                                }, 1000);
+                            }
+                        });
+
+
+
+                        $("#merchantDeposit").on('submit', function (e) {
+                            e.preventDefault();
+                            $(".btn-merchant").css('pointer-events', 'none');
+                            $(".btn-merchant").val('Please Wait...');
+                            setTimeout(function () {
+                                $("#merchant-success").html('<h5 class="text-success"><i class="fa-regular fa-check-circle"></i> Payment processing...</h5>');
+                            }, 1500);
+                        });
+                    });
+
+                    function copyInput() {
+                        var copyText = document.getElementById("copyInput");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        navigator.clipboard.writeText(copyText.value);
+                        dataAlert('copyData', copyText.value + '<br>Copied', 200);
+                    }
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!---------MOBILE MENU---------->
+    <div class="position-fixed w-100 bg-secondary m-menu">
+        <div class="d-flex d-flex justify-content-around">
+            <div>
+                <a class="btn d-block w-100" id="sideMenu">
+                    <i class="fa-regular fa-bars"></i><br>Menu </a>
+            </div>
+            <div>
+                <a class="btn d-block w-100" href="partner.html">
+                    <i class="fa-regular fa-handshake"></i><br>Affiliate</a>
+            </div>
+            <div>
+                <a class="btn d-block w-100" href="index.html">
+                    <i class="fa fa-regular fa-home"></i><br>Home </a>
+            </div>
+            <div class="dropup">
+                <a class="btn d-block w-100 fs-12 dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fa-regular fa-spade fs-18"></i><br>Casino </a>
+                <ul class="dropdown-menu text-center" style="width:90px; min-width:90px;">
+                    <li>
+                        <a class="btn btn-sm" href="index.html?redirect=games?page=casino">
+                            <i class="fa-regular fa-cards"></i><br>Live Casino </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-sm" href="index.html?redirect=games?page=slot">
+                            <i class="fa-regular fa-slot-machine"></i><br>Slot Games </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-sm" href="index.html?redirect=games?page=crash">
+                            <i class="fa-regular fa-rocket-launch"></i><br>Crash Games </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a class="btn d-block w-100" id="bottomMenu">
+                    <i class="fa-regular fa-user-circle"></i><br>Account </a>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://t.me/Habjabajs"
+        style="position:fixed; bottom:62px; right:15px; height:50px; width:50px; text-align:center; background:#27A5E7;color:#FFFFFF; border-radius:50%; cursor: pointer; z-index:9;">
+        <i class="fa-brands fa-telegram" style="font-size:28px; line-height:52px;"></i>
+    </a>
+    <!--------Footer----------->
+
+    <footer class="mt-3 px-2">
+        <center>
+            <div class="bg-footer p-3 mb-2">
+                <div class="row">
+                    <div class="mb-4 col-md-12 col-12"><br>
+                        <p class="text-center fs-12 px-lg-5 px-2">Please only gamble with funds you can afford to lose.
+                            No guarantee
+                            of results or financial gain is given. This App only accepts customers over the age of 18.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+        <div class="bg-footer p-3 mb-2">
+            <h6 class="mb-3">Payment Methods</h6>
+            <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                    <img src="uploads/payments/75360028.png" height="45" class="rounded mb-2" />
+                </li>
+                <li class="list-inline-item">
+                    <img src="uploads/payments/94254785.png" height="45" class="rounded mb-2" />
+                </li>
+                <li class="list-inline-item">
+                    <img src="uploads/payments/53373884.png" height="45" class="rounded mb-2" />
+                </li>
+                <li class="list-inline-item">
+                    <img src="uploads/payments/46203231.png" height="45" class="rounded mb-2" />
+                </li>
+                <li class="list-inline-item">
+                    <img src="uploads/payments/21832337.png" height="45" class="rounded mb-2" />
+                </li>
+                <li class="list-inline-item">
+                    <img src="uploads/payments/83001445.png" height="45" class="rounded mb-2" />
+                </li>
+                <li class="list-inline-item">
+                    <img src="uploads/payments/61969203.png" height="45" class="rounded mb-2" />
+                </li>
+                <li class="list-inline-item">
+                    <img src="uploads/payments/65757988.png" height="45" class="rounded mb-2" />
+                </li>
+                <li class="list-inline-item">
+                    <img src="uploads/payments/48238852.jpg" height="45" class="rounded mb-2" />
+                </li>
+            </ul>
+        </div>
+        <div class="bg-footer py-2 px-3 mb-2">
+            <div class="row">
+                <div class="col-md-10 my-2">
+                    <a href="about.html">About Us</a> |
+                    <a href="responsible-gambling.html">Responsible Gambling</a>
+                </div>
+                <div class="col-md-2 my-2">
+                    <div class="text-center fs-20 border rounded lg-text-end text-center"
+                        style="width:60px; font-size:20px; font-weight:600;">
+                        18+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-speach"></div>
+
+
+    <div class="modal fade" id="resetModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                <div class="modal-body">
+                    <h1 class="text-center fs-20 mb-2">Reset Password</h1><br>
+                    <div class="row resetForm mb-3">
+                        <div class="col-6 p-0"><a class="active" data-reset="mail"><i
+                                    class="fa-regular fa-envelope me-1"></i> By
+                                Email</a></div>
+                        <div class="col-6 p-0"><a data-reset="phone"><i
+                                    class="fa-regular fa-mobile-screen-button me-1"></i> By
+                                Phone</a></div>
+                    </div>
+                    <div id="reset-success" class="text-success"></div>
+                    <div id="reset-error600" class="text-danger"></div>
+                    <form method="POST" id="reset">
+                        <div id="reset-form"></div>
+                        <input type="submit" class="submit w-100" id="btn-es" value="Reset Password">
+                    </form>
+                    <div class="form-desc">
+                        <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+                                onclick="loginForm('uid');">Log In</a></p>
+
+                        <p>Do not have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal"
+                                onclick="registerForm('oneclick');">Registration</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                <div class="modal-body">
+                    <h1 class="text-center fs-20 mb-2">Log In</h1><br>
+                    <div class="row loginForm mb-3">
+                        <div class="col-4 p-0"><a class="active" data-login="uid"><i
+                                    class="fa-regular fa-circle-check me-1"></i>
+                                By Id</a></div>
+                        <div class="col-4 p-0"><a data-login="mail"><i class="fa-regular fa-envelope me-1"></i> By
+                                Email</a></div>
+                        <div class="col-4 p-0"><a data-login="phone"><i
+                                    class="fa-regular fa-mobile-screen-button me-1"></i> By
+                                Phone</a></div>
+                    </div>
+                    <div id="log-error600" class="text-danger"></div>
+                    <form method="POST" id="login">
+                        <div id="login-form"></div>
+                        <input type="submit" class="submit w-100" value="Log In">
+                    </form>
+                    <div class="form-desc">
+                        <p>Do not have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal"
+                                onclick="registerForm('oneclick');"> Registration</a></p>
+
+                        <p><a href="#" data-bs-toggle="modal" data-bs-target="#resetModal"
+                                onclick="resetForm('mail');">Reset
+                                Password</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="reg-success"></div>
+    <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                <div class="modal-body">
+                    <h1 class="text-center fs-20 mb-2">Create a new account</h1><br>
+                    <div class="row registerForm mb-3">
+                        <div class="col-4 p-0"><a class="active" data-register="oneclick"><i
+                                    class="fa-regular fa-hand-pointer me-1"></i> 1-Click</a></div>
+                        <div class="col-4 p-0"><a data-register="phone"><i
+                                    class="fa-regular fa-mobile-screen-button me-1"></i> By
+                                Phone</a></div>
+                        <div class="col-4 p-0"><a data-register="mail"><i class="fa-regular fa-envelope me-1"></i> By
+                                Email</a>
+                        </div>
+                    </div>
+                    <div id="reg-error600" class="text-danger"></div>
+                    <form method="POST" id="register">
+                        <div id="register-form"></div>
+                        <input type="submit" class="submit w-100" value="Registration" />
+                    </form><br>
+                    <div class="form-desc">
+                        <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+                                onclick="loginForm('uid');">Log In</a></p>
+
+                        <p>By clicking this button you confirm that you have read and agree to the <a target="_blank"
+                                href="tos.html">Terms and Conditions</a> and <a target="_blank"
+                                href="privacy.html">Privacy Policy</a>
+                            of the company and confirm that you are of legal age</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="langModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                <div class="modal-body">
+                    <h1 class="text-center fs-20 mb-2 pb-3 border-bottom">Change Language</h1><br>
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="views/basic/js/account.js"></script>
+    <script src="views/basic/js/custom.js"></script>
+    <script src="views/basic/js/server.js"></script>
+    <!-- Touch 'n Go Modal -->
+    <div id="touchNGoModal" class="processing-modal">
+        <div class="modal-content-custom tng-modal" style="padding: 0; overflow: hidden; max-width: 350px;">
+            <div class="tng-header"
+                style="background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); padding: 20px; color: white;">
+                <h5 class="mb-1" style="font-weight: bold;">TOUCH'N GO</h5>
+                <p class="small mb-0" style="opacity: 0.9;">Fast, Secure, and Convenient Mobile Payments</p>
+            </div>
+            <div class="p-4 bg-white">
+                <h2 class="text-danger mb-4" style="color: #e57373 !important; font-weight: bold;" id="tngAmount">MYR
+                    200.00</h2>
+
+                <div class="mb-3" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fa-regular fa-clock text-muted"></i> <span id="tngTime">14:58</span>
+                </div>
+
+                <div class="btn btn-info w-100 mb-3 text-white"
+                    style="background-color: #4facfe; border: none; padding: 10px; border-radius: 5px;">
+                    Hantar Pembayaran
+                </div>
+
+                <p class="text-success mb-3" style="font-weight: 500;">Penghantaran Berjaya!</p>
+
+                <div class="spinner-border text-info" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Processing Modal -->
+    <div id="processingModal" class="processing-modal">
+        <div class="modal-content-custom">
+            <div class="spinner-border text-secondary mb-3" role="status" style="width: 3rem; height: 3rem;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <h4 class="mb-2">Searching Transaction...</h4>
+            <p class="text-muted mb-3">Please wait</p>
+            <div class="timer-text mb-3">Time remaining: <span id="countdown">10</span>s</div>
+            <div class="progress" style="height: 10px;">
+                <div id="progressBar" class="progress-bar bg-dark" role="progressbar" style="width: 100%"></div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .processing-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content-custom {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .timer-text {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</body>
+
+</html>

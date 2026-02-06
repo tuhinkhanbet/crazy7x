@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSLCommerz Payment</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .payment-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header-section {
+            background: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .brand-logo img {
+            height: 40px;
+        }
+
+        .merchant-info {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .payment-body {
+            background: #d81b60;
+            /* Pinkish red color from screenshot */
+            color: white;
+            padding: 20px;
+        }
+
+        .title-text {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .input-group-custom {
+            background: white;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .input-group-custom input {
+            border: none;
+            width: 100%;
+            padding: 12px 15px;
+            outline: none;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .info-row {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 12px 0;
+            font-size: 15px;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .copy-btn {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .amount-highlight {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .number-box {
+            background: #fdd835;
+            color: black;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .footer-btn {
+            width: 100%;
+            background: #d81b60;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .footer-btn:hover {
+            background: #c2185b;
+        }
+
+        .footer-section {
+            background: #fff;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+
+        .note-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            color: #333;
+        }
+
+        .note-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .note-list {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 14px;
+        }
+
+        .bottom-action-btn {
+            display: block;
+            width: 100%;
+            background: #e91e63;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            border: none;
+        }
+
+        .bottom-action-btn:hover {
+            background: #d81b60;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="payment-container">
+            <!-- Header -->
+            <div class="header-section">
+                <div class="brand-logo d-flex align-items-center">
+                    <img style="width: 50px;height: 20px;" src="uploads/payments/sslcommerz.png" alt="SSLCommerz"
+                        class="me-2">
+                    <span class="fs-4 fw-bold text-dark">SSLCommerz</span>
+                </div>
+                <div class="merchant-info">
+                    <div class="text-muted small">Merchant</div>
+                    <div class="fw-bold">CRAZY7X</div>
+                    <div class="text-muted small">Trax ID: <span id="headerTrxId">Loading...</span></div>
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class="payment-body">
+                <div class="title-text">Enter Transaction ID</div>
+
+                <div class="input-group-custom">
+                    <input type="text" id="trxIdInput" placeholder="Enter Transaction ID">
+                </div>
+
+                <div class="info-row">
+                    Amount : <span class="amount-highlight">৳ <span id="amountDisplay">500</span></span>
+                </div>
+
+                <div class="info-row" id="dialInstruction">
+                    Dial *247# from your mobile
+                </div>
+
+                <div class="info-row">
+                    Select Send Money option from menu
+                </div>
+
+                <div class="info-row">
+                    Enter Receiver Number
+                    <span class="number-box">
+                        <span id="receiverNumber">01700000000</span>
+                        <button class="copy-btn" onclick="copyNumber()">Copy</button>
+                    </span>
+                </div>
+
+                <div class="info-row">
+                    Enter Amount you want to send
+                </div>
+
+                <div class="info-row">
+                    Enter Reference: <span id="refId">12345</span>
+                </div>
+
+                <div class="info-row">
+                    Confirm if all information is correct
+                </div>
+
+                <div class="info-row" style="border-bottom: none;">
+                    Finally enter your PIN to complete transaction
+                </div>
+            </div>
+
+            <!-- Footer Info -->
+            <div class="footer-section">
+                <div class="note-box">
+                    <div class="note-title">Note</div>
+                    <ul class="note-list">
+                        <li>You must send the exact amount (৳ <span id="noteAmount">500</span>).</li>
+                        <li>Enter Transaction ID</li>
+                    </ul>
+                </div>
+
+                <button class="bottom-action-btn" onclick="submitPayment()">Make Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Processing Modal -->
+    <div id="processingModal" class="processing-modal">
+        <div class="modal-content-custom">
+            <div class="spinner-border text-secondary mb-3" role="status" style="width: 3rem; height: 3rem;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <h4 class="mb-2">Searching Transaction...</h4>
+            <p class="text-muted mb-3">Please wait</p>
+            <div class="timer-text mb-3">Time remaining: <span id="countdown">10</span>s</div>
+            <div class="progress" style="height: 10px;">
+                <div id="progressBar" class="progress-bar bg-dark" role="progressbar" style="width: 100%"></div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .processing-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content-custom {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .timer-text {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Parse URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const amount = urlParams.get('amount') || '500';
+            const method = urlParams.get('method') || 'Bkash';
+
+            // Generate a random transaction ID for the header
+            const headerTrx = 'TRX' + Math.floor(Math.random() * 1000000000);
+            $('#headerTrxId').text(headerTrx);
+
+            // Populate fields
+            $('#amountDisplay').text(amount);
+            $('#noteAmount').text(amount);
+
+            // Set dynamic receiver number based on method (simulation)
+            let receiver = '01700000100';
+            let logoSrc = '';
+
+            if (method.toLowerCase().includes('bkash')) {
+                receiver = '018*****569'; // Using number from screenshot
+                logoSrc = 'uploads/payments/61969203.png';
+            } else if (method.toLowerCase().includes('nagad')) {
+                receiver = '017*****431';
+                logoSrc = 'uploads/payments/65757988.png';
+                // Change background color for Nagad
+                $('.payment-body, .footer-btn, .bottom-action-btn').css('background', '#F7941C');
+                $('.bottom-action-btn:hover, .footer-btn:hover').css('background', '#e68a1a');
+                $('#dialInstruction').text('Dial *167# from your mobile');
+            }
+
+            $('#receiverNumber').text(receiver);
+
+            // Update header with method logo
+            if (logoSrc) {
+                $('.merchant-info').html('<img src="' + logoSrc + '" height="40" alt="' + method + '">');
+            }
+
+            // Update method specific text if needed
+            // For now using the generic text from screenshot which assumes Bkash flow
+            if (!method.toLowerCase().includes('bkash')) {
+                // Just a simple replacement for context if it's not Bkash
+                $('.info-row:contains("PIN")').html('Finally enter your PIN to complete transaction');
+            }
+        });
+
+        function copyNumber() {
+            const num = $('#receiverNumber').text();
+            navigator.clipboard.writeText(num).then(() => {
+                const btn = $('.copy-btn');
+                const originalText = btn.text();
+                btn.text('Copied!');
+                setTimeout(() => btn.text(originalText), 2000);
+            });
+        }
+
+        function submitPayment() {
+            const trxId = $('#trxIdInput').val();
+            if (!trxId) {
+                alert('Please enter Transaction ID');
+                return;
+            }
+
+            // Show Processing Modal
+            $('#processingModal').css('display', 'flex');
+
+            let timeLeft = 10;
+            const totalTime = 10;
+
+            const timer = setInterval(function () {
+                timeLeft--;
+                $('#countdown').text(timeLeft);
+
+                // Update progress bar
+                const percentage = (timeLeft / totalTime) * 100;
+                $('#progressBar').css('width', percentage + '%');
+
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    alert('Transaction ID not matching');
+                    window.location.href = 'index.html';
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>

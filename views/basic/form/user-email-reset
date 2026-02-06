@@ -1,0 +1,3 @@
+<input type="hidden" name="reset" value="mail">
+<input type="email" name="mail" id="reset-border400" class="form-control" placeholder="Email Address" required>
+<div class="text-danger" id="reset-error400"></div><br>

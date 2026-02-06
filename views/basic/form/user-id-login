@@ -1,0 +1,5 @@
+<input type="hidden" name="login" value="uid">
+<input type="number" name="user_id" id="log-border400" class="form-control numberNoArrow" placeholder="User Id" required><div class="text-danger" id="log-error400"></div><br>
+
+<input type="password" name="pass" id="log-border500" placeholder="Password" class="form-control" autocomplete="off" required>
+<div class="text-danger" id="log-error500"></div><br>

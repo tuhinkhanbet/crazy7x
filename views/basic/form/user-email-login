@@ -1,0 +1,5 @@
+<input type="hidden" name="login" value="mail">
+<input type="email" name="mail" id="log-border300" class="form-control" placeholder="Email Address" required><div class="text-danger" id="log-error300"></div><br>
+
+<input type="password" name="pass" id="log-border500" placeholder="Password" class="form-control" autocomplete="off" required>
+<div class="text-danger" id="log-error500"></div><br>
