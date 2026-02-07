@@ -1,0 +1,47 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "type": 1,
+            "name": "9WICKETS",
+            "image": "https:\/\/www.jeet-winbdt.com\/images\/provider\/dark\/icon_9wickets.png",
+            "url": "https://crazy7x.com/lobby?id=30&id=1&type=crazytime&tid=CrazyTime0000001&name=Crazy Time"
+        },
+        {
+            "type": 1,
+            "name": "SBO",
+            "image": "https://www.jeet-winbdt.com/images/provider/dark/icon_sbov2.png",
+            "url": "https:\/\/crazy1x.com\/lobby?id=105&name=Bti-Sports"
+        },
+        {
+            "type": 1,
+            "name": "SABA",
+            "image": "https://www.jeet-winbdt.com/images/provider/dark/provider_saba.png",
+            "url": "https://crazy7x.com/lobby?id=30&id=1&type=crazytime&tid=CrazyTime0000001&name=Crazy Time"
+        },
+        {
+            "type": 1,
+            "name": "CMD",
+            "image": "https://www.jeet-winbdt.com/images/provider/dark/icon_cmd.png",
+            "url": "https://crazy7x.com/lobby?id=30&id=1&type=crazytime&tid=CrazyTime0000001&name=Crazy Time"
+        },
+        {
+            "type": 1,
+            "name": "BTi",
+            "image": "https://www.jeet-winbdt.com/images/provider/dark/icon_sbtech.png",
+            "url": "https:\/\/crazy1x.com\/lobby?id=105&name=Bti-Sports"
+        },
+        {
+            "type": 1,
+            "name": "HORSE",
+            "image": "https://www.jeet-winbdt.com/images/provider/dark/icon_awcmv2horsebook.png",
+            "url": "https://crazy7x.com/lobby?id=30&id=1&type=crazytime&tid=CrazyTime0000001&name=Crazy Time"
+        },
+        {
+            "type": 1,
+            "name": "PINNACLE",
+            "image": "https://www.jeet-winbdt.com/images/provider/dark/icon_awcmpinnacle.png",
+            "url": "https://crazy7x.com/lobby?id=30&id=1&type=crazytime&tid=CrazyTime0000001&name=Crazy Time"
+        }
+    ]
+}

@@ -225,8 +225,19 @@
         <script type="text/javascript">
           getPages('Top');
           function getPages(provider) {
+            // Map tab IDs to their corresponding JSON files
+            var jsonFiles = {
+              'Top': 'data/home-data.json',
+              'sports': 'data/sports.json',
+              'casino': 'data/live-casino.json',
+              'slot': 'data/slot.json',
+              'crash': 'data/crash.json'
+            };
+
+            var jsonUrl = jsonFiles[provider] || 'data/home-data.json';
+
             $.ajax({
-              url: "data/home-data.json",
+              url: jsonUrl,
               method: "GET",
               dataType: 'json',
               data: {},
@@ -253,26 +264,18 @@
             var contents = '<div class="row g-0">';
             for (x in json) {
               var item = json[x];
-              if (item.type == 1) {
-                contents += '<div class="col-lg-2 col-md-3 col-3 p-0 mb-1">';
-                contents += '<div class="m-1 border shadow-sm bg-secondary rounded p-1">';
-                contents += '<a class="btn btn-sm p-0 w-100 d-block" href="' + item.url + '" title="' + item.name + '">';
-                contents += '<img src="' + item.image + '" data-src="' + item.image + '" class="lazy rounded-bottom w-100" height="80" /></a>';
-                contents += '<div class="p-1 text-center cut-text">' + item.name + '</div></div></div>';
-              } else {
-                contents += '<div class="col-lg-2 col-md-3 col-3 p-0 mb-1">';
-                contents += '<div class="m-1 border shadow-sm bg-secondary rounded p-1">';
-                contents += '<a class="btn btn-sm p-0 w-100 d-block game-click-handler" href="javascript:void(0)" title="' + item.name + '">';
-                contents += '<img src="' + item.image + '" data-src="' + item.image + '" class="lazy rounded-bottom w-100" height="80" /></a>';
-                contents += '<div class="p-1 text-center cut-text">' + item.name + '</div></div></div>';
-              }
+              contents += '<div class="col-lg-2 col-md-3 col-3 p-0 mb-1">';
+              contents += '<div class="m-1 border shadow-sm bg-secondary rounded p-1">';
+              contents += '<a class="btn btn-sm p-0 w-100 d-block game-click-handler" href="javascript:void(0)" title="' + item.name + '">';
+              contents += '<img src="' + item.image + '" data-src="' + item.image + '" class="lazy rounded-bottom w-100" height="80" /></a>';
+              contents += '<div class="p-1 text-center cut-text">' + item.name + '</div></div></div>';
             }
             contents += '</div>';
             return contents;
           }
         </script>
         <!---------App Download---------->
-        <div class="app-class pb-2 mb-2 app-layout">
+        <div class="app-class pb-2 mb-2 app-layout d-none">
           <div class="container-fluid">
             <div class="d-flex justify-content-between">
               <div>
@@ -369,7 +372,16 @@
       <h6 class="mb-3">Payment Methods</h6>
       <ul class="list-unstyled list-inline">
         <li class="list-inline-item">
-          <img src="uploads/payments/0" height="45" class="rounded mb-2" />
+          <img src="uploads/payments/75360028.png" height="45" class="rounded mb-2" />
+        </li>
+        <li class="list-inline-item">
+          <img src="uploads/payments/94254785.png" height="45" class="rounded mb-2" />
+        </li>
+        <li class="list-inline-item">
+          <img src="uploads/payments/53373884.png" height="45" class="rounded mb-2" />
+        </li>
+        <li class="list-inline-item">
+          <img src="uploads/payments/46203231.png" height="45" class="rounded mb-2" />
         </li>
         <li class="list-inline-item">
           <img src="uploads/payments/21832337.png" height="45" class="rounded mb-2" />

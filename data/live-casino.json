@@ -1,0 +1,53 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "type": 1,
+            "name": "Evolution",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-1.jpeg",
+            "url": "https:\/\/crazy1x.com\/games?page=casino&provider=30"
+        },
+        {
+            "type": 1,
+            "name": "Pragmatic Play",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-28.jpg",
+            "url": "https:\/\/crazy1x.com\/games?page=casino&provider=32"
+        },
+        {
+            "type": 1,
+            "name": "Ezugi",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-17.jpg",
+            "url": "https:\/\/crazy1x.com\/games?page=casino&provider=33"
+        },
+        {
+            "type": 1,
+            "name": "Micro Gaming",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-3.jpg",
+            "url": "https:\/\/crazy1x.com\/games?page=casino&provider=77"
+        },
+        {
+            "type": 1,
+            "name": "Dream Gaming",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-6.png",
+            "url": "https:\/\/crazy1x.com\/games?page=casino&provider=79"
+        },
+        {
+            "type": 1,
+            "name": "Sexy Gaming",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-9.jpeg",
+            "url": "https:\/\/crazy1x.com\/games?page=casino&provider=80"
+        },
+        {
+            "type": 1,
+            "name": "Live 88",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-11.png",
+            "url": "https:\/\/crazy1x.com\/games?page=casino&provider=81"
+        },
+        {
+            "type": 1,
+            "name": "Skywind",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-19.jpg",
+            "url": "https:\/\/crazy1x.com\/games?page=casino&provider=84"
+        }
+    ]
+}

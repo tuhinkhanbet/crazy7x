@@ -1,0 +1,29 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "type": 1,
+            "name": "Spribe",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-300.webp",
+            "url": "https:\/\/crazy1x.com\/games?page=crash&provider=86"
+        },
+        {
+            "type": 1,
+            "name": "Alize",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-302.png",
+            "url": "https:\/\/crazy1x.com\/games?page=crash&provider=87"
+        },
+        {
+            "type": 1,
+            "name": "Aviatrix",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-303.webp",
+            "url": "https:\/\/crazy1x.com\/games?page=crash&provider=88"
+        },
+        {
+            "type": 1,
+            "name": "Fast Game",
+            "image": "https:\/\/crazy1x.com\/uploads\/games\/GM-304.png",
+            "url": "https:\/\/crazy1x.com\/games?page=crash&provider=89"
+        }
+    ]
+}
