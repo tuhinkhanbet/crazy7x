@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <meta name="description" content="Casino Bonuses" />
+    <meta name="keywords" content="Casino, Bonuses, Promotions" />
+    <title>Casino Bonuses - Crazy7x</title>
+    <script type="text/javascript">
+        var siteUrl = '';
+        var maxSelected = '5';
+        var viewDir = 'basic';
+    </script>
+    <link rel="stylesheet" href="views/basic/css/style.css">
+    <style>
+        /* Casino Bonuses Page Styles */
+        .bonuses-container {
+            background: #1D4268;
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
+
+        .bonus-card {
+            background: #205583;
+            border: 1px solid #7EAC2F;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .bonus-title {
+            color: #7EAC2F;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .bonus-expiry {
+            color: #aaa;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .bonus-amount {
+            color: #fff;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .bonus-progress {
+            height: 6px;
+            background: #333;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .bonus-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #7EAC2F, #9fc74a);
+            border-radius: 3px;
+            width: 0%;
+        }
+
+        .bonus-limits {
+            display: flex;
+            justify-content: space-between;
+            color: #aaa;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        .btn-deposit {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #7EAC2F;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn-deposit:hover {
+            background: #6b9628;
+            color: #fff;
+        }
+
+        .btn-details {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: transparent;
+            border: 1px solid #14A0FF;
+            border-radius: 20px;
+            padding: 5px 15px;
+            color: #14A0FF;
+            font-size: 13px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-details:hover {
+            background: #14A0FF;
+            color: #fff;
+        }
+
+        .btn-details i {
+            color: #ff6b35;
+        }
+
+        /* Bonus Details Modal */
+        .bonus-modal .modal-content {
+            background: #205583;
+            border: 1px solid #276AA5;
+            border-radius: 8px;
+        }
+
+        .bonus-modal .modal-header {
+            border-bottom: none;
+            padding: 20px 20px 10px;
+        }
+
+        .bonus-modal .modal-title {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .bonus-modal .btn-close {
+            background: none;
+            border: none;
+            color: #aaa;
+            font-size: 20px;
+            opacity: 1;
+        }
+
+        .bonus-modal .modal-body {
+            padding: 20px;
+        }
+
+        .bonus-detail-row {
+            margin-bottom: 15px;
+        }
+
+        .bonus-detail-label {
+            color: #7EAC2F;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .bonus-detail-value {
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .bonus-modal .modal-footer {
+            border-top: none;
+            padding: 10px 20px 20px;
+        }
+
+        .btn-modal-close {
+            background: #276AA5;
+            border: none;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-modal-close:hover {
+            background: #1f5a8f;
+        }
+
+        .page-title {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between">
+                <div class="me-3">
+                    <a class="my-btn" href="index.html">
+                        <span class="t1">Crazy</span><span class="t2">7x</span>
+                    </a>
+                </div>
+
+                <div class="" id="auth-section">
+                    <div class="d-flex">
+                        <div class="me-2 mt-2">
+                            <a class="submit" data-bs-toggle="modal" data-bs-target="#loginModal"
+                                onclick="loginForm('uid');">Log In</a>
+                        </div>
+                        <div class="mt-2">
+                            <a class="submit-2" data-bs-toggle="modal" data-bs-target="#registerModal"
+                                onclick="registerForm('oneclick');">Registration</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="top-speach"></div>
+
+    <div class="bonuses-container">
+        <div class="container-fluid px-lg-4 px-3 pt-3">
+            <h2 class="page-title">Deposit Turnover</h2>
+
+            <div class="row" id="bonusCards">
+                <!-- Bonus cards will be generated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bonus Details Modal -->
+    <div class="modal fade bonus-modal" id="bonusModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bonusModalTitle">Bonus Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="bonus-detail-row">
+                        <div class="bonus-detail-label">Bonus:</div>
+                        <div class="bonus-detail-value" id="modalBonus">60.00%</div>
+                    </div>
+                    <div class="bonus-detail-row">
+                        <div class="bonus-detail-label">Min Deposit:</div>
+                        <div class="bonus-detail-value" id="modalMinDeposit">25,000.00</div>
+                    </div>
+                    <div class="bonus-detail-row">
+                        <div class="bonus-detail-label">Max Bonus:</div>
+                        <div class="bonus-detail-value" id="modalMaxBonus">50,000.00</div>
+                    </div>
+                    <div class="bonus-detail-row">
+                        <div class="bonus-detail-label">Turnover:</div>
+                        <div class="bonus-detail-value" id="modalTurnover">2x</div>
+                    </div>
+                    <div class="bonus-detail-row">
+                        <div class="bonus-detail-label">Validity:</div>
+                        <div class="bonus-detail-value" id="modalValidity">7 Days</div>
+                    </div>
+                    <div class="bonus-detail-row">
+                        <div class="bonus-detail-label">Eligible Games:</div>
+                        <div class="bonus-detail-value" id="modalGames">slots, sports, casino</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-modal-close" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="position-fixed w-100 bg-secondary m-menu">
+        <div class="d-flex d-flex justify-content-around">
+            <div>
+                <a class="btn d-block w-100" id="sideMenu">
+                    <i class="fa-regular fa-bars"></i><br>Menu
+                </a>
+            </div>
+            <div>
+                <a class="btn d-block w-100" href="partner.html">
+                    <i class="fa-regular fa-handshake"></i><br>My Referral
+                </a>
+            </div>
+            <div>
+                <a class="btn d-block w-100" href="index.html">
+                    <i class="fa fa-regular fa-home"></i><br>Home
+                </a>
+            </div>
+            <div>
+                <a class="btn d-block w-100 active" href="casino.html">
+                    <i class="fa-regular fa-chart-line fs-18"></i><br>Turnover
+                </a>
+            </div>
+            <div>
+                <a class="btn d-block w-100" id="bottomMenu">
+                    <i class="fa-regular fa-user-circle"></i><br>Account
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Calculate date 1 month from now
+        function getExpiryDate(daysToAdd) {
+            var date = new Date();
+            date.setDate(date.getDate() + daysToAdd);
+            var day = String(date.getDate()).padStart(2, '0');
+            var month = String(date.getMonth() + 1).padStart(2, '0');
+            var year = date.getFullYear();
+            return day + '/' + month + '/' + year;
+        }
+
+        // Bonus data
+        var bonuses = [
+            {
+                title: 'First Time Deposit Bonus',
+                amount: '50,000.00',
+                expiry: getExpiryDate(30),
+                hasProgress: true,
+                progressPercent: 0,
+                minAmount: '0.00',
+                maxAmount: '50,000.00',
+                details: {
+                    bonus: '50%',
+                    minDeposit: '100.00',
+                    maxBonus: '50,000.00',
+                    turnover: '5x',
+                    validity: '30 Days',
+                    games: 'slots, sports, casino'
+                }
+            },
+            {
+                title: 'Weekly Bonus',
+                amount: '50,000.00',
+                expiry: getExpiryDate(30),
+                hasProgress: false,
+                details: {
+                    bonus: '30%',
+                    minDeposit: '25,000.00',
+                    maxBonus: '50,000.00',
+                    turnover: '5x',
+                    validity: '7 Days',
+                    games: 'slots, sports, casino'
+                }
+            },
+            {
+                title: 'Special Bonus !!',
+                amount: '1,00,000.00',
+                expiry: getExpiryDate(30),
+                hasProgress: false,
+                details: {
+                    bonus: '100%',
+                    minDeposit: '5,000.00',
+                    maxBonus: '1,00,000.00',
+                    turnover: '10x',
+                    validity: '7 Days',
+                    games: 'slots, sports, casino, crash'
+                }
+            }
+        ];
+
+        // Generate bonus cards
+        function generateBonusCards() {
+            var html = '';
+            bonuses.forEach(function (bonus, index) {
+                html += '<div class="col-lg-6 col-md-6">';
+                html += '<div class="bonus-card">';
+                html += '<div class="bonus-title">' + bonus.title + '</div>';
+                html += '<div class="bonus-expiry">Expires at: ' + bonus.expiry + '</div>';
+                html += '<div class="bonus-amount">' + bonus.amount + '</div>';
+
+                if (bonus.hasProgress) {
+                    html += '<div class="bonus-progress"><div class="bonus-progress-bar" style="width:' + bonus.progressPercent + '%"></div></div>';
+                    html += '<div class="bonus-limits"><span>' + bonus.minAmount + '</span><span>' + bonus.maxAmount + '</span></div>';
+                }
+
+                html += '<a href="deposit.html" class="btn-deposit">Deposit Now</a>';
+                html += '<button class="btn-details" onclick="showBonusDetails(' + index + ')"><i class="fa-solid fa-fire"></i> Details</button>';
+                html += '</div>';
+                html += '</div>';
+            });
+            document.getElementById('bonusCards').innerHTML = html;
+        }
+
+        // Show bonus details modal
+        function showBonusDetails(index) {
+            var bonus = bonuses[index];
+            document.getElementById('bonusModalTitle').textContent = bonus.title;
+            document.getElementById('modalBonus').textContent = bonus.details.bonus;
+            document.getElementById('modalMinDeposit').textContent = bonus.details.minDeposit;
+            document.getElementById('modalMaxBonus').textContent = bonus.details.maxBonus;
+            document.getElementById('modalTurnover').textContent = bonus.details.turnover;
+            document.getElementById('modalValidity').textContent = bonus.details.validity;
+            document.getElementById('modalGames').textContent = bonus.details.games;
+
+            var modal = new bootstrap.Modal(document.getElementById('bonusModal'));
+            modal.show();
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            generateBonusCards();
+        });
+    </script>
+
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="views/basic/js/account.js"></script>
+    <script src="views/basic/js/custom.js"></script>
+    <script src="views/basic/js/server.js"></script>
+</body>
+
+</html>

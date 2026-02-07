@@ -76,7 +76,6 @@ $(document).ready(function(){
         // 1. HEADER UPDATE - Match original design
         var loggedInHtml = `
             <div class="d-flex align-items-center">
-                <div class="mt-2 me-2" style="cursor:pointer;" onclick="updateBalance();"><i class="fa-regular fa-rotate"></i></div>
                 <div class="dropdown" id="balance">
                     <span class="text-white">BDT ${userBalance}</span>
                 </div>

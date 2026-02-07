@@ -1,187 +1,522 @@
 <!doctype html>
- <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="csrf-token" content="">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="">
-                <link href="assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <link rel="stylesheet" href="views/basic/css/partner.css">
-        <script src="assets/js/jquery-1.11.1.min.js"></script>
-        <meta name="description" content="">
-        <meta name="keywords" content="Affiliate, Partner, Give money. Earn money">
-        <title>earn money $200 daily</title>    </head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <meta name="description" content="" />
+    <meta name="keywords" content="Referral, Partner, Earn rewards" />
+    <title>My Referral - Crazy7x</title>
+    <script type="text/javascript">
+        var siteUrl = '';
+        var maxSelected = '5';
+        var viewDir = 'basic';
+    </script>
+    <link rel="stylesheet" href="views/basic/css/style.css">
+    <style>
+        /* Referral Page Specific Styles */
+        .referral-container {
+            background: #1a1a1a;
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
+
+        .referral-tabs {
+            display: flex;
+            gap: 30px;
+            border-bottom: 1px solid #333;
+            margin-bottom: 30px;
+        }
+
+        .referral-tab {
+            padding: 12px 0;
+            font-size: 16px;
+            color: #888;
+            cursor: pointer;
+            border: none;
+            background: none;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .referral-tab:hover {
+            color: #fff;
+        }
+
+        .referral-tab.active {
+            color: #3ecf8e;
+        }
+
+        .referral-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #3ecf8e;
+        }
+
+        .referral-info-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .qr-code-container {
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            width: 140px;
+            height: 140px;
+            flex-shrink: 0;
+        }
+
+        .qr-code-container img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .referral-code-section {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .referral-label {
+            color: #3ecf8e;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .referral-code {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .referral-code h3 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .copy-code-btn {
+            background: none;
+            border: none;
+            color: #888;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .copy-code-btn:hover {
+            color: #3ecf8e;
+        }
+
+        .referral-description {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .referral-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-referral {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-copy-link {
+            background: #3ecf8e;
+            color: #000;
+        }
+
+        .btn-copy-link:hover {
+            background: #34b87d;
+        }
+
+        .btn-share {
+            background: #3ecf8e;
+            color: #000;
+        }
+
+        .btn-share:hover {
+            background: #34b87d;
+        }
+
+        .stats-container {
+            background: #252525;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .stat-card {
+            background: #3a7d61;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .stat-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .stat-value {
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .no-referrals-container {
+            background: #3a7d61;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .no-referrals-title {
+            color: #3ecf8e;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .no-referrals-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .details-content {
+            background: #252525;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .details-table {
+            width: 100%;
+            color: #fff;
+        }
+
+        .details-table th {
+            color: #888;
+            font-weight: 500;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        .details-table td {
+            padding: 12px;
+            border-bottom: 1px solid #333;
+        }
+
+        .empty-details {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+    </style>
+</head>
+
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-lg">
-          <div class="container">
-             <a class="navbar-brand me-4 text-logo" href="partner.html"> 
-                        <span class="text-white">Crazy</span><span class="color-primary">1x</span>
-                        <div class="partner">Partner</div>
-                    </a>            
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="">
-                  <i class="fa-thin fa-bars"></i>
-              </button>
-            <div class="collapse navbar-collapse" id="navbarMenu">
-              <ul class="navbar-nav me-auto mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="partner.html">Main Page</a>
-                     </li>
-                    <li class="nav-item d-lg-none d-block">
-                       <a class="nav-link text-uppercase" href="index.html?redirect=partner/login">Log In</a>
-                    </li>
-                     <li class="nav-item d-lg-none d-block">
-                        <a class="nav-link text-uppercase" href="index.html?redirect=partner/register">Registration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="index.html?redirect=partner/contact">Contact us</a>
-                    </li>
-               </ul>
-               <div class="d-flex d-lg-block d-none">
-
-                 
-                     <a class="submit me-2" href="index.html?redirect=partner/register">
-                        <i class="fa-thin fa-user-plus me-1"></i> Registration                    </a>
-
-                     <a class="text-white" href="index.html?redirect=partner/login">
-                        <i class="fa-thin fa-sign-in me-1"></i> Log In                    </a>
-
-                                </div>
-            </div>
-        </div>
-    </nav>
-</header><div class="container pt-5">
-     <div class="row">
-         <div class="col-md-6 mb-5 ">
-            <h2 class="my-5 text-uppercase fw-900 color-primary">Become A Partner</h2>
-             <div class="border-start-primary shadow-sm p-4 rounded">
-                <h5>MAKE MONEY WITH US</h5>
-                Register<br>
-                Introduce new users to Crazy7x<br>
-                Get up to 40% commission for customers introduced<br><br><br>
-
-                 <a class="submit-2" href="index.html?redirect=partner/register">
-                     <i class="fa-thin fa-user-plus me-2"></i> Registration                  </a>
-             </div>
-         </div>
-
-          <div class="col-md-6 mb-5">
-             <center>
-                  <img src="index.html?redirect=partner/assets/goal.png" class="img-fluid">
-             </center>
-         </div>
-     </div>
-</div>
-
-
-<div class="container mt-5">
-     <div class="row">
-
-         <div class="col-md-4 mb-5">
-            <div class="bg-gray border-top-primary shadow-lg p-4 rounded text-center">
-            <i class="fa-solid fa-dollar-sign color-primary mb-4" style="font-size:40px;"></i><br>
-                 <h5 class="text-uppercase">REGULAR PAYOUTS</h5>
-                 <p>Get paid every week</p>
-            </div>
-         </div>
-
-           <div class="col-md-4 mb-5">
-            <div class="bg-gray border-top-primary shadow-lg p-4 rounded text-center">
-                  <i class="fa-solid fa-chart-mixed color-primary mb-4" style="font-size:40px;"></i><br>
-                 <h5 class="text-uppercase">HIGH COMMISSION RATES</h5>
-                <p>Earn up to 40% from players</p>
-            </div>
-         </div>
-
-           <div class="col-md-4 mb-5">
-            <div class="bg-gray border-top-primary shadow-lg p-4 rounded text-center">
-                 <i class="fa-solid fa-square-share-nodes color-primary mb-4" style="font-size:40px;"></i><br>
-                 <h5 class="text-uppercase">SHARE</h5>
-                 <p>Promo Code & Link</p>
-            </div>
-         </div>
-
-     </div>
-</div><br><br><br>
-
-
-
-<center>
-     <img src="index.html?redirect=partner/assets/bg.png" class="img-fluid">
-</center><br><br>
-
-
-
-
-<div class="container mt-5">
-    <br><h2 class="text-center fs-700">Start earning commission in 3 steps!</h2><br>
-
-     <div>Earn 40% commission for every Create customer you refer. As long as they have followed a link on your site, you are all set! You will even continue to earn commission for the duration that they are subscribed to our service</div><br><br><br>
-
-     <div class="row">
-        <div class="col-lg-4">
-            <div class="bg-gray p-4 rounded mb-3"> 
-            <center>
-                <div class="rounded-circle p-4 bg-light-1 text-center mb-3" style="width: 110px;">
-                   <h1>1</h1>
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between">
+                <div class="me-3">
+                    <a class="my-btn" href="index.html">
+                        <span class="t1">Crazy</span><span class="t2">7x</span> </a>
                 </div>
-                </center>
-                <h6>Access your affiliate account</h6>
-                <div>Sign up for one of affiliate platforms listed below. After your account is approved you will get access to affiliate text links and banners with your affiliate ID applied</div>
-             </div>
-        </div>
-        <div class="col-lg-4">
-        <div class="bg-gray p-4 rounded mb-3">
-          <center>
-            <div class="rounded-circle p-4 bg-light-1 text-center mb-3" style="width: 110px;">
-                    <h1>2</h1>
+
+                <div class="" id="auth-section">
+                    <div class="d-flex">
+                        <div class="me-2 mt-2">
+                            <a class="submit" data-bs-toggle="modal" data-bs-target="#loginModal"
+                                onclick="loginForm('uid');">Log
+                                In</a>
+                        </div>
+                        <div class="mt-2">
+                            <a class="submit-2" data-bs-toggle="modal" data-bs-target="#registerModal"
+                                onclick="registerForm('oneclick');">Registration</a>
+                        </div>
+                    </div>
                 </div>
-            </center>    
-         <h6>Share your affiliate link</h6>
-              <div>Use your affiliate ID to refer to any Crazy7x page or choose one of our banners. Display the link or banner on your site, social media or emails</div>
-             </div>
-          </div> 
-
-        <div class="col-lg-4">
-           <div class="bg-gray p-4 rounded mb-3">
-             <center>
-              <div class="rounded-circle p-4 bg-light-1 text-center mb-3" style="width: 110px;">        
-                    <h1>3</h1>
-               </div>
-             </center>
-             <h6>Watch your commissions grow</h6>
-               <div>You earn actual dollars for every new customer you refer to us. We provide real-time reporting on your earnings and regular payouts                </div>
             </div>
-          </div>
-    </div>
-</div><br><br><footer class="p-3 py-5">
-      <div class="container">
-        <div class="row">
-             <div class="col-lg-6 mb-4">
-                 <a class="text-white m-2 text-uppercase" href="index.html?redirect=partner/tos">Terms of Service</a>
-                 <a class="text-white m-2 text-uppercase" href="index.html?redirect=partner/privacy">Privacy Policy</a>
-                 <a class="text-white m-2 text-uppercase" href="index.html?redirect=partner/contact">Contact Us</a>
-           </div>
-          <div class="col-lg-4 mb-4">
-            <center>
-                 <div class="d-flex">
-                    <img src="index.html?redirect=partner/assets/laliga.webp" class="img-icon" />
-                    <img src="index.html?redirect=partner/assets/evolution.png" class="img-icon" />
-                    <img src="index.html?redirect=partner/assets/epl.png" class="img-icon" />
-                    <img src="index.html?redirect=partner/assets/ezugi.png" class="img-icon" />
-                 </div>
-             </center>
-          </div>
         </div>
-        <div class="fs-11 py-2"> &copy; 2026 Crazy7x All rights reserved.</div>
+    </header>
+    <div class="top-speach"></div>
+
+    <div class="referral-container">
+        <div class="container-fluid px-lg-4 px-3 pt-3">
+
+            <!-- Tabs -->
+            <div class="referral-tabs">
+                <button class="referral-tab active" data-tab="info">Info</button>
+                <button class="referral-tab" data-tab="details">Details</button>
+            </div>
+
+            <!-- Info Tab Content -->
+            <div class="tab-content active" id="info-tab">
+                <!-- Referral Code Section -->
+                <div class="referral-info-section">
+                    <div class="qr-code-container">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://crazy7x.com?ref=REFV53F5A"
+                            alt="QR Code" id="referralQR">
+                    </div>
+                    <div class="referral-code-section">
+                        <div class="referral-label">Your referral code</div>
+                        <div class="referral-code">
+                            <h3 id="referralCodeDisplay">REFV53F5A</h3>
+                            <button class="copy-code-btn" onclick="copyReferralCode();" title="Copy code">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="referral-description">Share this code with friends to earn rewards</div>
+                        <div class="referral-buttons">
+                            <button class="btn-referral btn-copy-link" onclick="copyReferralLink();">
+                                <i class="fa-solid fa-share-nodes"></i> Copy Link
+                            </button>
+                            <button class="btn-referral btn-share" onclick="shareReferral();">
+                                <i class="fa-solid fa-share-nodes"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="stats-container">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-label">Active Users</div>
+                            <div class="stat-value">0</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Lifetime rewards</div>
+                            <div class="stat-value">0</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Referral turnover</div>
+                            <div class="stat-value">0</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Cash rewards</div>
+                            <div class="stat-value">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No Referrals Message -->
+                <div class="no-referrals-container">
+                    <div class="no-referrals-title">No referrals yet</div>
+                    <div class="no-referrals-text">Share your referral code to start earning rewards</div>
+                </div>
+            </div>
+
+            <!-- Details Tab Content -->
+            <div class="tab-content" id="details-tab">
+                <div class="details-content">
+                    <h4 class="mb-4" style="color: #fff;">How Our Referral Program Works</h4>
+
+                    <div class="mb-4">
+                        <div class="d-flex align-items-start mb-2">
+                            <span
+                                style="color: #d4a629; font-weight: bold; margin-right: 10px; font-size: 18px;">1</span>
+                            <div>
+                                <h6 style="color: #d4a629; margin-bottom: 5px;">Share Your Code</h6>
+                                <p style="color: #888; font-size: 14px; margin: 0;">Share your unique referral code with
+                                    friends. They'll use it when signing up for your app.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex align-items-start mb-2">
+                            <span
+                                style="color: #d4a629; font-weight: bold; margin-right: 10px; font-size: 18px;">2</span>
+                            <div>
+                                <h6 style="color: #d4a629; margin-bottom: 5px;">Earn Rewards</h6>
+                                <p style="color: #888; font-size: 14px; margin: 0;">When your friend makes their first
+                                    deposit or completes qualifying activities, you'll earn rewards.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex align-items-start mb-2">
+                            <span
+                                style="color: #d4a629; font-weight: bold; margin-right: 10px; font-size: 18px;">3</span>
+                            <div>
+                                <h6 style="color: #d4a629; margin-bottom: 5px;">Track Your Earnings</h6>
+                                <p style="color: #888; font-size: 14px; margin: 0;">Monitor your referral earnings and
+                                    statistics in real-time on this dashboard.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="mt-4 mb-3" style="color: #d4a629;">Terms & Conditions</h5>
+                    <ul style="color: #888; font-size: 14px; padding-left: 20px;">
+                        <li class="mb-2">Referral rewards are subject to terms and conditions</li>
+                        <li class="mb-2">Abuse of the referral system may result in account suspension</li>
+                        <li class="mb-2">Rewards may take up to 24 hours to appear in your account</li>
+                        <li class="mb-2">Minimum withdrawal limits may apply to referral earnings</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
     </div>
-</footer>
 
+    <!-- Mobile Menu -->
+    <div class="position-fixed w-100 bg-secondary m-menu">
+        <div class="d-flex d-flex justify-content-around">
+            <div>
+                <a class="btn d-block w-100" id="sideMenu">
+                    <i class="fa-regular fa-bars"></i><br>Menu </a>
+            </div>
+            <div>
+                <a class="btn d-block w-100 active" href="partner.html">
+                    <i class="fa-regular fa-handshake"></i><br>My Referral</a>
+            </div>
+            <div>
+                <a class="btn d-block w-100" href="index.html">
+                    <i class="fa fa-regular fa-home"></i><br>Home </a>
+            </div>
+            <div>
+                <a class="btn d-block w-100" href="casino.html">
+                    <i class="fa-regular fa-chart-line fs-18"></i><br>Turnover
+                </a>
+            </div>
+            <div>
+                <a class="btn d-block w-100" id="bottomMenu">
+                    <i class="fa-regular fa-user-circle"></i><br>Account </a>
+            </div>
+        </div>
+    </div>
 
-   <script src="assets/js/popper.js"></script>
-   <script src="assets/js/bootstrap.min.js"></script>
+    <div id="copyAlert"></div>
+
+    <script>
+        // Tab switching functionality
+        document.querySelectorAll('.referral-tab').forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Remove active class from all tabs
+                document.querySelectorAll('.referral-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked tab
+                this.classList.add('active');
+
+                // Show corresponding content
+                const tabName = this.getAttribute('data-tab');
+                document.getElementById(tabName + '-tab').classList.add('active');
+            });
+        });
+
+        // Generate a random referral code for non-logged in users
+        function generateReferralCode() {
+            const userId = localStorage.getItem('userId') || 'V53F5A';
+            return 'REF' + userId.toUpperCase();
+        }
+
+        // Copy referral code
+        function copyReferralCode() {
+            const code = document.getElementById('referralCodeDisplay').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                showCopyAlert('Referral code copied!');
+            });
+        }
+
+        // Copy referral link
+        function copyReferralLink() {
+            const code = document.getElementById('referralCodeDisplay').textContent;
+            const link = 'https://crazy7x.com?ref=' + code;
+            navigator.clipboard.writeText(link).then(() => {
+                showCopyAlert('Referral link copied!');
+            });
+        }
+
+        // Share referral
+        function shareReferral() {
+            const code = document.getElementById('referralCodeDisplay').textContent;
+            const link = 'https://crazy7x.com?ref=' + code;
+            const text = 'Join Crazy7x using my referral code: ' + code;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Join Crazy7x',
+                    text: text,
+                    url: link
+                });
+            } else {
+                copyReferralLink();
+            }
+        }
+
+        // Show copy alert
+        function showCopyAlert(message) {
+            const alert = document.getElementById('copyAlert');
+            alert.innerHTML = '<div class="position-fixed top-50 start-50 translate-middle bg-success text-white px-4 py-3 rounded shadow" style="z-index:9999;">' + message + '</div>';
+            setTimeout(() => {
+                alert.innerHTML = '';
+            }, 2000);
+        }
+
+        // Update referral code based on user
+        document.addEventListener('DOMContentLoaded', function () {
+            if (localStorage.getItem('isLoggedIn') === 'true') {
+                const userId = localStorage.getItem('userId') || 'V53F5A';
+                const refCode = 'REF' + userId.toUpperCase();
+                document.getElementById('referralCodeDisplay').textContent = refCode;
+                document.getElementById('referralQR').src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://crazy7x.com?ref=' + refCode;
+            }
+        });
+    </script>
+
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="views/basic/js/account.js"></script>
+    <script src="views/basic/js/custom.js"></script>
+    <script src="views/basic/js/server.js"></script>
 </body>
+
 </html>
